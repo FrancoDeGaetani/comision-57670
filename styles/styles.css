@@ -84,12 +84,15 @@ h1, h2, h3, h4{
 
 .tienda-principal {
     display: grid;
-    margin: auto;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr 75px;
     margin: 30px 100px 20px 100px;
     column-gap: 10px;
     justify-content: center;
+}
+
+.button-producto {
+    height: 100%;
 }
 
 .img-tineda-principal-container{
@@ -103,11 +106,10 @@ h1, h2, h3, h4{
 }
 
 .link-tienda {
-    align-content: start;
     align-items: center;
     text-align: center;
     padding: 10px 20px;
-    width: 250px;
+    width: 250px; 
     margin: auto;
     border: 0.1px solid #527167;
     border-radius: 5px;
@@ -155,14 +157,14 @@ h1, h2, h3, h4{
 .tienda-secundaria {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr ;
     column-gap: 15px;
     margin: 0px 100px;
 }
 
 .img-tienda-secundaria{
-    width: 100%;
+    max-width: 100%;
     height: 100%;
-    object-fit: contain;
 }
 
 .cartel-oferta-container{
@@ -180,9 +182,9 @@ h1, h2, h3, h4{
 }
 
 .button-tienda-secundaria{
-    grid-area: button;
     padding: 10px 20px;
-    width: 370px;
+    max-width: 370px;
+    min-width: 250px;
     margin: auto;
     border: 0.1px solid #527167;
     border-radius: 5px;
