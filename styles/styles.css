@@ -1,0 +1,581 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+US+Trad:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "poppins", sans-serif;
+    background-color: #f9f7f7;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4{
+    color: #527167;
+}
+
+
+/*----------------------------------HEADER----------------------------------*/
+.header {
+    background-color: #eae0de;
+}
+
+.nav{
+    display: flex;
+    height: 4.3875rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo-container{
+    max-width: 100%;
+    width: auto;
+    margin: 1px 10px;
+}
+
+.header-logo {
+    width: 130px;
+}
+
+.nav-list li {
+    margin: 5px;
+    display: inline-block;
+}
+
+.nav-list li a{
+    color: #c4a9a5;
+    background-color: #fff;
+    border: 0.1px solid transparent;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px #0005;
+    padding: 4px 10px;
+}
+
+
+
+
+
+/* ---------------------------PAGINA-PRINCIPAL----------------------- */
+/* -------------MAIN-DE-LA-PAGINA-PRINCIPAL------------*/
+
+.fondo-pag-principal{
+    background-image: url(../assets/imgs/fondopc.jpg);
+    box-sizing: border-box;
+    height: 100vh;
+    background-size: 100%;
+    object-fit:cover;
+}
+
+.titulo-pag-principal{
+    font-family: "Playwrite US Trad", cursive;
+    color: #fff;
+    font-weight: 400;
+    font-size: 60px;
+}
+
+.tienda-principal {
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 75px;
+    margin: 30px 100px 20px 100px;
+    column-gap: 10px;
+    justify-content: center;
+}
+
+.img-tineda-principal-container{
+    height: 100%;
+}
+
+.tienda-principal-item{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+.link-tienda {
+    align-content: start;
+    align-items: center;
+    text-align: center;
+    padding: 10px 20px;
+    width: 250px;
+    margin: auto;
+    border: 0.1px solid #527167;
+    border-radius: 5px;
+    font-weight: 400;
+    background-color: #f5f8f8;
+}
+
+
+/*----------------LO-MAS-VENDIDO-SECTION-----------------*/
+
+.lo-mas-vendido {
+    width: auto;
+    height: 350px;
+}
+
+.vendido-button{
+    color: #527167;
+    background-color: #f5f8f8;
+    border: 0.1px solid #527167;
+    border-radius: 5px;
+    padding: 4px 14px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    margin: 10px auto;
+}
+
+.lo-mas-vendido-img-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.img-mas-vendido{
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+
+}
+
+/*---------TIANDA-SECUNDARIA-PAGINA-PRINCIPAL------------*/
+
+.tienda-secundaria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 15px;
+    margin: 0px 100px;
+}
+
+.img-tienda-secundaria{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.cartel-oferta-container{
+    position: relative;
+}
+
+.cartel-oferta {
+    position: absolute;
+    top: 15px;
+    right: -10px;
+    color: #3f6153;
+    font-size: 2.1875rem;
+    background-color: #eae0de;
+    padding: .3125rem 1.5625rem;
+}
+
+.button-tienda-secundaria{
+    grid-area: button;
+    padding: 10px 20px;
+    width: 370px;
+    margin: auto;
+    border: 0.1px solid #527167;
+    border-radius: 5px;
+    font-weight: 400;
+    background-color: #f5f8f8;
+    text-align: center;
+}
+
+/*------------PAGINA-PRINCIPAL-ENDS------------*/
+
+/*----------------------------TIENDA-SECTION-------------------------*/    
+
+/*---------------NAV-TIENDA-LIST---------------*/
+.nav-tienda-list {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #fff;
+}
+
+.nav-tienda-list li{
+    border: 2px solid #527167;
+    width: 230px;
+    height: 35px;
+    margin: 15px;
+
+}
+
+.nav-tienda-list-item{
+    width: 100%;
+    height: 100%;
+    font-weight: 400;
+    font-size: 22px;
+    text-align: center;
+}
+
+.buscador-tienda-container{
+    width: 250px;
+    margin: 20px auto;
+    
+}
+
+.buscador-tienda-container input {
+    width: 250px;
+    height: 30px;
+}
+
+/*------NAV-TIENDA-LIST-ENDS--------*/
+/*---------------TIENDA-SECTION------------------*/
+
+.tienda {
+    display: grid;
+    grid-template-columns: repeat(4, 400px);
+    row-gap: 60px;
+    column-gap: 20px;
+    justify-content: center;
+    margin: 40px 20px;
+}
+
+.tienda-img {
+    width: 100%;
+    height: auto;
+}
+
+.nombre-button-container {
+    display: flex;
+}
+
+.nombre-button-container h3 {
+    border: 1px solid #3f6153;
+    width: 100%;
+    flex-grow: 1;
+    text-align: center;
+    padding: 5px 10px;
+    font-weight: 300;
+    font-size: 22px;
+}
+
+.nombre-button-container button {
+    border: none;
+    background: transparent;
+    margin-left: 5px;
+    color: #3f6153;
+}
+/*---------------TIENDA-SECTION-ENDS------------------*/
+
+/*-----------------------FAVORITOS-SECTION------------------------------*/
+
+.titulo-fav-container{
+    display: flex;
+}
+
+.titulo-fav {
+    border: 1px solid #3f6153;
+    text-align: center;
+    width: 500px;
+    margin: 25px auto;
+    font-weight: 400;
+}
+
+.favoritos {
+    display: grid;
+    grid-template-columns: repeat(4, 400px);
+    justify-content: center;
+    column-gap: 15px;
+    row-gap: 17px;
+}
+
+.fav-img {
+    width: 100%;
+    height: auto;
+}
+
+.titulo-fav-producto{
+    font-weight: 300;
+    border: 1px solid #3f6153;
+    background-color: #fff;
+    text-align: center;
+    padding: 5px 10px;
+}
+
+.img-container-fav{
+    position: relative;
+    margin: none;
+}
+
+.img-container-fav button {
+    position: absolute;
+    border: none;
+    background: transparent;
+    color: #3f6153;
+    right: 0;
+    top: -2px;
+}
+/*--------------FAVORITO-SECTION-ENDS---------------*/
+
+/*--------------------------OFERTAS-SECTION---------------------------*/
+
+.titulo-oferta{
+    border: 1px solid #3f6153;
+    text-align: center;
+    width: 500px;
+    margin: 25px auto;
+    font-weight: 500;
+}
+
+.fav-container {
+    display: grid;
+    grid-template-columns: repeat(4, 400px);
+    justify-content: center;
+    column-gap: 15px;
+    row-gap: 17px;
+}
+
+.oferta-img {
+    width: 100%;
+    height: 100%;
+}
+
+.img-container-ofert {
+    position: relative;
+}
+
+.cartel-ofert {
+    position: absolute;
+    display: flex;
+    background-color: #eae0de ;
+    color: #3f6153;
+    top: 17px;
+    right: -10px;
+    width: 100px;
+    height: 40px;
+}
+
+.cartel-ofert p {
+    margin: auto;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.titulo-oferta-producto{
+    display: flex;
+    width: 400px;
+}
+
+.titulo-oferta-producto a{
+    width: 100%;
+}
+
+
+.titulo-oferta-producto a h2{
+    border: 1px solid #3f6153;
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 5px 10px;
+    font-weight: 300;
+    font-size: 22px;
+}
+
+.ofer-button {
+    border: none;
+    background: transparent;
+    margin-left: 5px;
+    color: #3f6153;
+}
+
+/*---------------OFERTA-SECTION-ENDS---------------------*/
+/*----------------------------------REGALO-SECTION----------------------------------------*/
+
+.gift-card-container{
+    margin: 40px auto;
+}
+
+
+.gift-card-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 600px);
+    grid-template-rows: repeat(2, 270px);
+    justify-content: center;
+    gap: 30px;
+}
+.regalo-card{
+    border-radius: 10px;
+    background-color: #eae0de;
+}
+
+.gift-card-nombre{
+    background-color: #fff;
+    text-align: center;
+    margin: 30px auto;
+    padding: 20px;
+    width: 29.375rem;
+}
+
+.gift-card-nombre h2{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.gift-card-text-container {
+    background-color: #fff;
+    margin: auto;
+    height: auto;
+    width: 29.375rem;
+}
+
+.gift-card-text {
+    text-align: center;
+    padding: 15px;
+}
+
+.gift-card-precio {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.gift-card-precio p{
+    padding: 15px;
+}
+
+/*--------------------------------------CONTACTO-SECTIO------------------------------------------*/
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #eae0de;
+    height: 75vh;
+    width: 800px;
+    margin: 75px auto;
+    gap: 25px;
+}
+
+.contacto-titulo, .contacto label, input{
+    color: #527167;
+    background-color: #fff;
+    border: 0.1px solid #527167;
+}
+
+.contacto-titulo{
+    border-radius: 5px;
+    padding: 10px 14px;
+    margin: 20px auto;
+    font-weight: 400;
+    width: 420px;
+    text-align: center;
+}
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto label {
+    width: 300px;
+    background: transparent;
+    border: none;
+}
+
+.contacto input {
+    border-radius: 11.5px;
+    padding: 5px 20px;
+    width: 500px;
+}
+
+.contacto textarea {
+    width: 500px;
+    height: 150px;
+}
+
+.button-contacto {
+    border-radius: 11.5px;
+    padding: 4px 14px;
+    width: 18.75rem;
+}
+
+
+/*-------------------------------------FOOTER-SECTION------------------------------------------*/
+
+footer {
+    background-color: #eae0de;
+    margin-top: 50px;
+    height: 100%;
+    width: 100%;
+    position: end;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-logo {
+    width: 275px;
+    margin-top: 30px;
+}
+
+.footer-link li a {
+    color: #3f6153;
+}
+
+.mapa p {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.iconos{
+    background-color: #fff;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    margin:  20px auto;
+    display: flex;
+}
+
+.iconos a {
+    margin: auto;
+}
+
+a svg {
+    color: #3f6153;
+    justify-content: center;
+    margin: 5px;
+}
+
+.ultimas-novedades{
+    background-color: #fff;
+    width: 420px;
+    height: 150px;
+    position: relative;
+}
+
+.ultimas-novedades p {
+    color: #3f6153;
+    position: absolute;
+    margin: 17px 10px;
+}
+
+.ultimas-novedades input, .ultimas-novedades label {
+    color: #3f6153;
+    font-weight: 500;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 300px;
+    height: 30px;
+    margin:  17px 10px;
+    border-radius: 8px;
+}
+
+.footer-button label, .footer-button input{
+    bottom: 0;
+    right: 0;
+    width: 80px;
+}
