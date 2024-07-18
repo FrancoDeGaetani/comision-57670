@@ -120,7 +120,7 @@ h1, h2, h3, h4{
 
 .lo-mas-vendido {
     width: auto;
-    height: 350px;
+    height: 230px;
 }
 
 .vendido-button{
@@ -144,8 +144,8 @@ h1, h2, h3, h4{
 }
 
 .img-mas-vendido{
-    width: 350px;
-    height: 250px;
+    max-width: 100%;
+    height: 150px;
     object-fit: cover;
 
 }
