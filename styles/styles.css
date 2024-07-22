@@ -31,7 +31,7 @@ h1, h2, h3, h4{
 
 .nav{
     display: flex;
-    height: 4.3875rem;
+    height: 60px;
     justify-content: space-between;
     align-items: center;
 }
@@ -39,11 +39,19 @@ h1, h2, h3, h4{
 .header-logo-container{
     max-width: 100%;
     width: auto;
-    margin: 1px 10px;
+}
+
+.link-logo {
+    height: 56px;
+}
+
+.nav .header-logo-container a {
+    display: inline-block;
 }
 
 .header-logo {
-    width: 130px;
+    width: 140px;
+    margin: 10px 10px 0px 50px;
 }
 
 .nav-list li {
@@ -58,6 +66,8 @@ h1, h2, h3, h4{
     border-radius: 5px;
     box-shadow: 0 5px 5px #0005;
     padding: 4px 10px;
+    width: 120%;
+    height: 100%;
 }
 
 
