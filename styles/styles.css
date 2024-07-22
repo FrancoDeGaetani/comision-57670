@@ -402,7 +402,91 @@ h1, h2, h3, h4{
 }
 
 /*---------------OFERTA-SECTION-ENDS---------------------*/
-/*----------------------------------REGALO-SECTION----------------------------------------*/
+
+/*-------------------------CARRITO-SECTION--------------------------------*/
+
+.carro-container{
+    width: 1000px;
+    height: auto;
+    margin: auto;
+    background-color: #eae0de;
+}
+
+.titulo-carro-container{
+    margin: 40px auto ;
+    width: 31.25rem;
+    border: 1px solid #3f6153;
+    background-color: #fff;
+    text-align: center;
+}
+
+.producto-carro-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 35px 70px;
+}
+
+.img-carro-container {
+    width: 229px;
+    height: 223px;
+}
+
+.img-carro {
+    width: 100%;
+    height: 100%;
+}
+
+.producto-carro-texto {
+    flex-direction: column;
+}
+
+.producto-carro-nombre-container{
+    display: flex;
+    background-color: #fff;
+    width: 350px;
+    height: 50px;
+    margin: 40px auto;
+}
+
+.producto-carro-nombre-container p{
+    margin: auto;
+}
+
+.producto-carro-precio-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.producto-precio-container {
+    display: flex;
+    background-color: #fff;
+    width: 210px;
+    height: 34px;
+}
+
+.producto-precio-container p {
+    margin: auto;
+}
+
+.producto-button-container{
+    margin: auto;
+}
+
+.precio-linea {
+    width: 85%;
+    margin: auto;
+    border: .5px solid #000;
+}
+
+.carro-precio-final {
+    display: flex;
+    margin: auto;
+    background: #fff;
+    justify-content: space-evenly;
+    height: 40px;
+}
+
+/*-------------------------REGALO-SECTION---------------------------*/
 
 .gift-card-container{
     margin: 40px auto;
@@ -454,7 +538,7 @@ h1, h2, h3, h4{
 .gift-card-precio p{
     padding: 15px;
 }
-
+/*--------------REGALO-SECTION-EDN----------------*/
 /*--------------------------------------CONTACTO-SECTIO------------------------------------------*/
 
 .form{
