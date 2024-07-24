@@ -65,12 +65,13 @@ body .navbar {
     display: flex;
     margin: 20px;
     justify-content: center;
-    gap: 20px;  
-    width: 100vw;
+    gap: 38px;  
+    width: 100%;
 }
 
 .tienda-principal {
     height: 800px;
+    width: 100%;
 }
 
 .button-producto {
@@ -80,13 +81,15 @@ body .navbar {
 
 .img-tineda-principal-container{
     height: 700px;
-    width: 100%;
+    width: 90%;
 }
 
 .tienda-principal-item{
-    width: 350px;
+    width: 100%;
     height: 100%;
     object-fit:cover;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .link-tienda {
@@ -96,21 +99,21 @@ body .navbar {
     margin: 10px auto;
     border: 0.1px solid #527167;
     border-radius: 5px;
-    font-weight: 400;
-    background-color: #f5f8f8;
+    font-weight: 300;
+    background-color: #fff;
 }
 
 
 /*----------------LO-MAS-VENDIDO-SECTION-----------------*/
 
 .lo-mas-vendido {
-    width: auto;
+    width: 100%;
     height: 230px;
 }
 
 .vendido-button{
     color: #527167;
-    background-color: #f5f8f8;
+    background-color: #fff;
     border: 0.1px solid #527167;
     border-radius: 5px;
     padding: 4px 14px;
@@ -129,11 +132,15 @@ body .navbar {
     width: 100vw;
 }
 
+.lo-mas-vendidoimg {
+    flex-grow: 1;
+}
+
 .img-mas-vendido{
+    width: 270px;
     max-width: 100%;
     height: 150px;
     object-fit: cover;
-
 }
 
 /*---------TIANDA-SECUNDARIA-PAGINA-PRINCIPAL------------*/
@@ -143,6 +150,7 @@ body .navbar {
     column-gap: 15px;
     margin: 0px 100px;
     justify-content: center;
+    gap: 50px;
 }
 
 .img-tienda-secundaria{
@@ -172,10 +180,21 @@ body .navbar {
     margin: 10px auto;
     border: 0.1px solid #527167;
     border-radius: 5px;
-    font-weight: 400;
-    background-color: #f5f8f8;
+    font-weight: 300;
+    background-color: #fff;
     text-align: center;
 }
+/*----------MEDIA-QUERIES-PAGINA-PRINCIPAL-----------*/
+
+@media screen and (max-width: 1440px){
+    .clas-media-container {
+        width: 600px;
+    }
+    
+}
+
+
+
 
 /*------------PAGINA-PRINCIPAL-ENDS------------*/
 
