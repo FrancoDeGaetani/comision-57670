@@ -16,8 +16,8 @@ li {
 }
 
 a {
-    text-decoration: none !important;
-    color: #527167 !important;
+    text-decoration: none;
+    color: #527167;
 }
 
 h1, h2, h3, h4{
@@ -63,7 +63,8 @@ body .navbar {
 
 .tienda-principal-container{
     display: flex;
-    margin: 20px;
+    flex-grow: 1;
+
     justify-content: center;
     gap: 38px;  
     width: 100%;
@@ -76,12 +77,12 @@ body .navbar {
 
 .button-producto {
     height: auto;
-    width: auto;
+    max-width: 100%;
 }
 
 .img-tineda-principal-container{
     height: 700px;
-    width: 90%;
+    width: 80%;
 }
 
 .tienda-principal-item{
@@ -95,7 +96,7 @@ body .navbar {
 .link-tienda {
     text-align: center;
     padding: 5px 20px;
-    width: 250px; 
+    width: 100%; 
     margin: 10px auto;
     border: 0.1px solid #527167;
     border-radius: 5px;
