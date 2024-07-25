@@ -4,6 +4,7 @@
     margin: 0px;
     padding: 0;
     box-sizing: border-box;
+    border: 1px solid red;
 }
 
 body{
@@ -63,8 +64,6 @@ body .navbar {
 
 .tienda-principal-container{
     display: flex;
-    flex-grow: 1;
-
     justify-content: center;
     gap: 38px;  
     width: 100%;
@@ -76,13 +75,15 @@ body .navbar {
 }
 
 .button-producto {
-    height: auto;
-    max-width: 100%;
+    display: inline-block;
+    width: auto;
+    height: 100%;
 }
 
 .img-tineda-principal-container{
     height: 700px;
-    width: 80%;
+    width: 100%;
+    flex-grow: 1;
 }
 
 .tienda-principal-item{
@@ -148,11 +149,28 @@ body .navbar {
 
 .tienda-secundaria {
     display: flex;
-    column-gap: 15px;
-    margin: 0px 100px;
     justify-content: center;
     gap: 50px;
 }
+
+.tienda-secundaria-container{
+    height: 100%;
+    width: auto;
+    
+}
+
+.container-segunda-tienda{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+
+}
+
+.img-tienda-secundaria-container {
+    width: auto;
+    height: 100%;
+}
+
 
 .img-tienda-secundaria{
     width: 400px;
@@ -160,6 +178,8 @@ body .navbar {
 
 .cartel-oferta-container{
     position: relative;
+    width: 100%;
+
 }
 
 .cartel-oferta {
