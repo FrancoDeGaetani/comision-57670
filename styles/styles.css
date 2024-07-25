@@ -130,7 +130,7 @@ body .navbar {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    width: 100vw;
+    width: 100%;
 }
 
 .lo-mas-vendidoimg {
