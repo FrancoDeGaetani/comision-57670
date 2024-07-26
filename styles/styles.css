@@ -69,7 +69,7 @@ body .navbar {
 .tienda-principal-container{
     display: flex;
     justify-content: center;
-    gap: 38px;  
+    gap: 27px;  
     width: 100%;
 }
 
@@ -80,7 +80,7 @@ body .navbar {
 }
 
 .img-tineda-principal-container{
-    height: 700px;
+    height: 600px;
     width: 100%;
 }
 
@@ -166,13 +166,11 @@ body .navbar {
 .img-tienda-secundaria-container {
     width: 100%;
     height: 600px;
-    flex-grow: 1;
 }
 
 .img-tienda-secundaria{
-    width: auto;
+    width: 100%;
     height: 100%;
-    object-fit: contain;
 }
 
 .cartel-oferta-container{
@@ -194,7 +192,7 @@ body .navbar {
 
 .button-tienda-secundaria{
     width: auto;
-    margin: auto;
+    margin: 10px auto;
     padding: 5px;
     border: 0.1px solid #527167;
     border-radius: 5px;
@@ -205,22 +203,66 @@ body .navbar {
 }
 /*----------MEDIA-QUERIES-PAGINA-PRINCIPAL-----------*/
 
+/*RESPONSIV-DESDE-LOS-1300PX*/
+@media screen and (max-width: 1299px){
+    /*TIENDA-PRINCIPAL*/
+    .img-tineda-principal-container {
+        height: 570px;
+    }
+    .tienda-principal-container{
+        gap:20px;
+    }
+    .tienda-principal{
+        margin: 10px;
+    }
+    /*TIENDA-SECUNDARIA*/
+    .img-tienda-secundaria-container {
+        height: 550px;
+    }
+}
+
+/*RESPONSIV-DESDE-LOS-1200PX*/
+@media screen and (max-width: 1200px){
+    /*TIENDA-PRINCIPAL*/
+    .tienda-principal-container{
+        gap:15px;
+    }
+    .tienda-principal{
+        margin: 5px;
+    }
+    .img-tineda-principal-container {
+        height: 480px;
+    }
+    /*TIENDA-SECUNDARIA*/
+    .img-tienda-secundaria-container {
+        height: 450px;
+    }
+}
+
+/*RESPONSIV-DESDE-LOS-1025PX*/
 @media screen and (max-width: 1025px){
-    /*  RIENDA-PRINCIPAL*/
+    /*TIENDA-PRINCIPAL*/
     .fondo-pag-principal {
-    height: 800px;
+    height: 700px;
     }
     .titulo-pag-principal{
         font-weight: 300;
         font-size: 50px;
+    }
+    .img-tineda-principal-container {
+        height: 450px;
+    }
+    .tienda-principal-container{
+        gap:5px;
+    }
+    .tienda-principal{
+        margin: 3px;
     }
     /*TIENDA-SECUNDARIA*/
     .tienda-secundaria{
         width: 100vw;
     }
 }
-
-
 
 
 /*------------PAGINA-PRINCIPAL-ENDS------------*/
@@ -667,7 +709,9 @@ a svg {
 
 .ultimas-novedades{
     background-color: #fff;
-    width: 420px;
+    max-width: 420px;
+    width: 100%;
+    min-width: 300px;
     height: 150px;
     position: relative;
 }
@@ -675,7 +719,8 @@ a svg {
 .ultimas-novedades p {
     color: #3f6153;
     position: absolute;
-    margin: 17px 10px;
+    margin: 10px;
+    width: auto;
 }
 
 .ultimas-novedades input, .ultimas-novedades label {
@@ -684,14 +729,14 @@ a svg {
     display: block;
     position: absolute;
     bottom: 0;
-    width: 300px;
+    width: 210px;
     height: 30px;
-    margin:  17px 10px;
+    margin:  10px 5px;
     border-radius: 8px;
 }
 
 .footer-button label, .footer-button input{
     bottom: 0;
     right: 0;
-    width: 80px;
+    width: 60px;
 }
