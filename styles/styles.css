@@ -147,6 +147,9 @@ body .navbar {
     object-fit: cover;
 }
 
+.carrucel {
+    display: none;
+}
 /*---------TIANDA-SECUNDARIA-PAGINA-PRINCIPAL------------*/
 
 .tienda-secundaria {
@@ -303,6 +306,9 @@ body .navbar {
 }
 
 @media screen and (max-width: 900px) {
+    .fondo-pag-principal {
+        height: 500px;
+        }
     .footer-container{
         flex-wrap: wrap;
         padding: 50px 0px;
@@ -329,6 +335,7 @@ body .navbar {
     .fondo-pag-principal{
         background-image: url(../assets/imgs/fondo-celu.jpg);
         background-position: center;
+        height: 800px;
     }
     .titulo-pag-principal{
         display: none;
@@ -347,6 +354,15 @@ body .navbar {
     .tienda-principal-item{
         object-fit:cover;
     }
+    .lo-mas-vendido{
+        display: none;
+    }
+    .carrucel {
+        display: inline;
+    }
+    .carousel-inner img{
+        height: 250px;
+    }
     .link-tienda{
         padding: 10px;
         margin: 5px 0px;
@@ -358,10 +374,6 @@ body .navbar {
         margin-top: 0px;
         width: 300px;
     }
-}
-
-@media screen and (max-width: 550px) {
-
 }
 
 /*------------PAGINA-PRINCIPAL-ENDS------------*/
