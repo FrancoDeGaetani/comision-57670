@@ -361,7 +361,8 @@ body .navbar {
         display: inline;
     }
     .carousel-inner img{
-        height: 250px;
+        height: 100%;
+        width: auto;
     }
     .link-tienda{
         padding: 10px;
