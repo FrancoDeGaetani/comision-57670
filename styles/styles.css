@@ -376,7 +376,11 @@ body .navbar {
         width: 300px;
     }
 }
-
+@media screen and (max-width:380px){
+    .fondo-pag-principal{
+        height: 550px;
+    }
+}
 /*------------PAGINA-PRINCIPAL-ENDS------------*/
 
 /*----------------------------TIENDA-SECTION-------------------------*/    
