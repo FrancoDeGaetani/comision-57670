@@ -221,6 +221,14 @@ body .navbar {
     margin-top: 10px;
 }
 
+.nav-tienda ul li a{
+    letter-spacing: 3px;
+}
+
+.tienda-desaparece{
+    display: none;
+}
+
 .tienda{
     height: 100%;
     display: grid;
@@ -262,7 +270,7 @@ body .navbar {
     font-weight: 300;
     font-size: 22px;
     margin-bottom: 0px;
-    margin: auto;
+    margin: 5px auto;
     padding: 9px 0px;
 }
 
@@ -271,6 +279,7 @@ body .navbar {
     background: transparent;
     color: #3f6153;
 }
+
 /*---------------TIENDA-SECTION-ENDS------------------*/
 
 /*-----------------------FAVORITOS-SECTION------------------------------*/
@@ -671,6 +680,24 @@ a svg {
 }
 
 /*----------MEDIA-QUERIES-PAGINA-PRINCIPAL-----------*/
+@media screen and (max-width: 1670px){
+    .nombre-tienda-container h3 {
+        font-weight: 200;
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 1540px){
+    .tienda{
+        grid-template-columns: repeat(4, minmax(250px,auto));
+        margin: 30px;
+        gap: 20px;
+    }
+    .nombre-tienda-container h3 {
+        font-weight: 200;
+        font-size: 18px;
+    }
+}
+
 
 /*RESPONSIV-DESDE-LOS-1300PX*/
 @media screen and (max-width: 1299px){
@@ -716,7 +743,22 @@ a svg {
         font-size: 25px;
         margin: 3px auto;
     }
+    /*TIENDA-SECTION*/
+    .tienda-desaparece{
+        display: inline;
+    }
+    .tienda{
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(3, minmax(300px,auto));
+        margin: 18px;
+        gap: 13px;
+    }
+    .nombre-tienda-container h3 {
+        font-weight: 200;
+        font-size: 18px;
+    }
 }
+
 
 /*RESPONSIV-DESDE-LOS-1025PX*/
 @media screen and (max-width: 1025px){
@@ -759,12 +801,26 @@ a svg {
     .tienda-secundaria{
         width: 100vw;
     }
+    /*TIENDA-SECTION*/
+    .tienda{
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(3, minmax(300px,auto));
+        margin: 15px;
+        gap: 10px;
+    }
 }
 
 @media screen and (max-width:1000px){
     section .tienda-secundaria-container:last-child{
         display: none;
     }
+        /*TIENDA-SECTION*/
+        .tienda{
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-columns: repeat(2, minmax(250px,auto));
+            margin: 15px;
+            gap: 10px;
+        }
 }
 
 @media screen and (max-width: 900px) {
@@ -791,6 +847,10 @@ a svg {
     .tienda-principal{
         margin: 10px;
     }
+/*TIENDA-SECTION*/
+.nav-tienda ul li a{
+    letter-spacing: auto;
+}
 }
 
 @media screen and (max-width: 600px) {
@@ -838,6 +898,19 @@ a svg {
         width: 300px;
     }
 }
+@media screen and (max-width:550px){
+/*TIENDA-SECTION*/
+    .tienda{
+        grid-template-columns: repeat(1, minmax(150px,auto));
+        margin: 15px;
+        gap: 25px;
+    }
+    .nombre-tienda-container h3 {
+        font-weight: 200;
+        font-size: 22px;
+        }
+}
+
 @media screen and (max-width:380px){
     .fondo-pag-principal{
         height: 550px;
