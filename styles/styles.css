@@ -4,8 +4,6 @@
     margin: 0px;
     padding: 0;
     box-sizing: border-box;
-
-    
 }
 
 body{
@@ -492,19 +490,25 @@ body .navbar {
 
 .gift-card-container{
     margin: 40px auto;
+    width: 1200px;
+    height: 100%;
+
 }
 
 
 .gift-card-grid{
     display: grid;
-    grid-template-columns: repeat(2, 600px);
-    grid-template-rows: repeat(2, 270px);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     justify-content: center;
+    width: 100%;
+    height: 100%;
     gap: 30px;
 }
 .regalo-card{
     border-radius: 10px;
     background-color: #eae0de;
+    width: 100%;
 }
 
 .gift-card-nombre{
@@ -522,7 +526,7 @@ body .navbar {
 
 .gift-card-text-container {
     background-color: #fff;
-    margin: auto;
+    margin:  20px auto;
     height: auto;
     width: 29.375rem;
 }
