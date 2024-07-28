@@ -288,6 +288,7 @@ body .navbar {
 
 .titulo-fav {
     border: 1px solid #3f6153;
+    background-color: #fff;
     text-align: center;
     width: 500px;
     margin: 25px auto;
@@ -295,11 +296,12 @@ body .navbar {
 }
 
 .favoritos {
+    height: 100%;
     display: grid;
-    grid-template-columns: repeat(4, 400px);
-    justify-content: center;
-    column-gap: 15px;
-    row-gap: 17px;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, minmax(350px,auto));
+    margin: 30px;
+    gap: 20px;
 }
 
 .fav-img {
@@ -309,6 +311,7 @@ body .navbar {
 
 .titulo-fav-producto{
     font-weight: 300;
+    font-size: 28px;
     border: 1px solid #3f6153;
     background-color: #fff;
     text-align: center;
@@ -335,17 +338,19 @@ body .navbar {
 .titulo-oferta{
     border: 1px solid #3f6153;
     text-align: center;
+    background-color: #fff;
     width: 500px;
     margin: 25px auto;
     font-weight: 500;
 }
 
 .fav-container {
+    height: 100%;
     display: grid;
-    grid-template-columns: repeat(4, 400px);
-    justify-content: center;
-    column-gap: 15px;
-    row-gap: 17px;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, minmax(350px,auto));
+    margin: 30px;
+    gap: 20px;
 }
 
 .oferta-img {
@@ -376,28 +381,27 @@ body .navbar {
 
 .titulo-oferta-producto{
     display: flex;
-    width: 400px;
+    width: auto;
 }
 
 .titulo-oferta-producto a{
     width: 100%;
 }
 
-
 .titulo-oferta-producto a h2{
     border: 1px solid #3f6153;
-    background-color: #fff;
-    width: 100%;
+    flex-grow: 1;
     text-align: center;
-    padding: 5px 10px;
     font-weight: 300;
     font-size: 22px;
+    margin-bottom: 0px;
+    margin: 5px auto;
+    padding: 9px 0px;
 }
 
 .ofer-button {
     border: none;
     background: transparent;
-    margin-left: 5px;
     color: #3f6153;
 }
 
@@ -569,8 +573,10 @@ body .navbar {
     border-radius: 5px;
     padding: 10px 14px;
     margin: 20px auto;
-    font-weight: 400;
-    width: 420px;
+    font-weight: 300;
+    font-size: 25px;
+    width: 400px;
+    height: 90;
     text-align: center;
 }
 
