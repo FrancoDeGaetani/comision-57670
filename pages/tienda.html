@@ -43,142 +43,167 @@
     </header>
     </header>
     <main>
-        <section class="nav-tienda-container">
-            <ul class="nav-tienda-list">
-                <li>
-                    <a href="#">
-                        <h2 class="nav-tienda-list-item">Remeras</h2>
-                    </a>
+        <section class="nav-tienda">
+            <ul class="nav nav-underline d-flex justify-content-evenly">
+                <li class="nav-item">
+                    <a class="nav-link text-dark active" aria-current="page" href="#">Remeras</a>
                 </li>
-                <li>
-                    <a href="#">
-                        <h2 class="nav-tienda-list-item">Pantalones</h2>
-                    </a>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="#">Pantalones</a>
                 </li>
-                <li>
-                    <a href="#">
-                        <h2 class="nav-tienda-list-item">Abrigos</h2>
-                    </a>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="#">Abrigos</a>
                 </li>
-                <li>
-                    <a href="#">
-                        <h2 class="nav-tienda-list-item">Accesorios</h2>
-                    </a>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="#">Accesorios</a>
                 </li>
-                <li>
-                    <a href="#">
-                        <h2 class="nav-tienda-list-item">Carteras</h2>
-                    </a>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="#">Carteras</a>
                 </li>
             </ul>
+                <form class="d-flex justify-content-center" role="search">
+                    <input class="form-control me-2 "  style="width: 400px;" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn" type="submit">Search</button>
+                </form>
+            </nav>
         </section>
-        <section class="buscador-tienda-container">
-            <label for="buscador-tienda"></label>
-            <input type="search" placeholder="Buscar..." name="buscador-tienda" id="buscador-tienda" >
-        </section>
-        <section class="tienda">
-            <div>
-                <a href="./pagina-producto.html">
-                    <img src="../assets/imgs/1.jpg" alt="" class="tienda-img">
-                </a>
-                <div class="nombre-button-container">
-                    <h3>Remera Minimalista Moderna</h3>
-                    <button>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
-                        </svg>
-                    </button>
+        <section>
+            <div class="tienda">
+                <div class="producto-tienda-container">
+                    <a href="./pagina-producto.html">
+                        <div>
+                            <div class="img-tienda-container">
+                                <img src="../assets/imgs/1.jpg" alt="" class="tienda-img">
+                            </div>
+                            <div class="nombre-tienda-container">
+                                <h3>Remera Minimalista Moderna</h3>
+                                <button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-            </div>
-            <div>
-                <a href="./pagina-producto.html">
-                    <img src="../assets/imgs/2.jpg" alt="" class="tienda-img">
-                </a>
-                <div class="nombre-button-container">
-                    <h3>Remera Lisa Chic</h3>
-                    <button>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
-                        </svg>
-                    </button>
+                <div class="producto-tienda-container">
+                    <a href="./pagina-producto.html">
+                        <div>
+                            <div class="img-tienda-container">
+                                <img src="../assets/imgs/2.jpg" alt="" class="tienda-img">
+                            </div>
+                            <div class="nombre-tienda-container">
+                                <h3>Remera Lisa Chic</h3>
+                                <button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-            </div>
-            <div>
-                <a href="./pagina-producto.html">
-                    <img src="../assets/imgs/3.jpg" alt="" class="tienda-img">
-                </a>
-                <div class="nombre-button-container">
-                    <h3>Remera Basica Soft</h3>
-                    <button>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
-                        </svg>
-                    </button>
+                <div class="producto-tienda-container">
+                    <a href="./pagina-producto.html">
+                        <div>
+                            <div class="img-tienda-container">
+                                <img src="../assets/imgs/3.jpg" alt="" class="tienda-img">
+                            </div>
+                            <div class="nombre-tienda-container">
+                                <h3>Remera Basica Casual</h3>
+                                <button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-            </div>
-            <div>
-                <a href="./pagina-producto.html">
-                    <img src="../assets/imgs/4.jpg" alt="" class="tienda-img">
-                </a>
-                <div class="nombre-button-container">
-                    <h3>Remera Basica Casual</h3>
-                    <button>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
-                        </svg>
-                    </button>
+                <div class="producto-tienda-container">
+                    <a href="./pagina-producto.html">
+                        <div>
+                            <div class="img-tienda-container">
+                                <img src="../assets/imgs/4.jpg" alt="" class="tienda-img">
+                            </div>
+                            <div class="nombre-tienda-container">
+                                <h3>Remera Basica Soft</h3>
+                                <button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-            </div>
-            <div>
-                <a href="./pagina-producto.html">
-                    <img src="../assets/imgs/5.jpg" alt="" class="tienda-img">
-                </a>
-                <div class="nombre-button-container">
-                    <h3>Remera Sencilla Esencial</h3>
-                    <button>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
-                        </svg>
-                    </button>
+                <div class="producto-tienda-container">
+                    <a href="./pagina-producto.html">
+                        <div>
+                            <div class="img-tienda-container">
+                                <img src="../assets/imgs/5.jpg" alt="" class="tienda-img">
+                            </div>
+                            <div class="nombre-tienda-container">
+                                <h3>Remera Sencilla Esencial</h3>
+                                <button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-            </div>
-            <div>
-                <a href="./pagina-producto.html">
-                    <img src="../assets/imgs/6.jpg" alt="" class="tienda-img img-buzo">
-                </a>
-                <div class="nombre-button-container">
-                    <h3>Buzo Calido Invierno</h3>
-                    <button>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
-                        </svg>
-                    </button>
+                <div class="producto-tienda-container">
+                    <a href="./pagina-producto.html">
+                        <div>
+                            <div class="img-tienda-container">
+                                <img src="../assets/imgs//conjunto-entero.jpg" alt="" class="tienda-img">
+                            </div>
+                            <div class="nombre-tienda-container">
+                                <h3>Campera De Jean Elastizado</h3>
+                                <button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-            </div>
-            <div>
-                <a href="./pagina-producto.html">
-                    <img src="../assets/imgs/7.jpg" alt="" class="tienda-img">
-                </a>
-                <div class="nombre-button-container">
-                    <h3>Body Estilo Glamour</h3>
-                    <button>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
-                        </svg>
-                    </button>
+                <div class="producto-tienda-container">
+                    <a href="./pagina-producto.html">
+                        <div>
+                            <div class="img-tienda-container">
+                                <img src="../assets/imgs/7.jpg" alt="" class="tienda-img">
+                            </div>
+                            <div class="nombre-tienda-container">
+                                <h3>Body Estilo Glamour</h3>
+                                <button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-            </div>
-            <div>
-                <a href="./pagina-producto.html">
-                    <img src="../assets/imgs/8.jpg" alt="" class="tienda-img">
-                </a>
-                <div class="nombre-button-container">
-                    <h3>Buzo Relax Deportivo</h3>
-                    <button>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
-                        </svg>
-                    </button>
+                <div class="producto-tienda-container">
+                    <a href="./pagina-producto.html">
+                        <div>
+                            <div class="img-tienda-container">
+                                <img src="../assets/imgs/8.jpg" alt="" class="tienda-img">
+                            </div>
+                            <div class="nombre-tienda-container">
+                                <h3>Buzo Relax Deportivo</h3>
+                                <button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
