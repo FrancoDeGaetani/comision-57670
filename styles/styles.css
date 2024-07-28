@@ -880,11 +880,13 @@ a svg {
         display: none;
     }
     .carrucel {
-        display: inline;
-    }
-    .carousel-inner img{
+        display: inline-block;
         height: 100%;
-        width: auto;
+        width: 100%;
+    }
+    .carousel-iten img{
+        height: auto;
+        width: 100%;
     }
     .link-tienda{
         padding: 10px;
