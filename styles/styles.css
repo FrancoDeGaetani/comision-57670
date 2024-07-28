@@ -4,6 +4,7 @@
     margin: 0px;
     padding: 0;
     box-sizing: border-box;
+    border: 1px solid red;
 }
 
 body{
@@ -414,6 +415,7 @@ body .navbar {
     height: auto;
     margin: auto;
     background-color: #eae0de;
+    padding: 20px;
 }
 
 .titulo-carro-container{
@@ -424,6 +426,10 @@ body .navbar {
     text-align: center;
 }
 
+.titulo-carro-container h1 {
+    margin-bottom: 0px;
+}
+
 .producto-carro-container {
     display: flex;
     justify-content: space-between;
@@ -431,8 +437,8 @@ body .navbar {
 }
 
 .img-carro-container {
-    width: 229px;
-    height: 223px;
+    width: 210px;
+    height: 240px;
 }
 
 .img-carro {
@@ -446,6 +452,8 @@ body .navbar {
 
 .producto-carro-nombre-container{
     display: flex;
+    border: 1px solid #3f6153;
+    color: #3f6153;
     background-color: #fff;
     width: 350px;
     height: 50px;
@@ -463,6 +471,8 @@ body .navbar {
 
 .producto-precio-container {
     display: flex;
+    border: 1px solid #3f6153;
+    color: #3f6153;
     background-color: #fff;
     width: 210px;
     height: 34px;
@@ -476,6 +486,12 @@ body .navbar {
     margin: auto;
 }
 
+.producto-button-container button{
+    border: none;
+    background: transparent;
+    color: #3f6153;
+}
+
 .precio-linea {
     width: 85%;
     margin: auto;
@@ -484,10 +500,15 @@ body .navbar {
 
 .carro-precio-final {
     display: flex;
-    margin: auto;
+    margin: 40px auto 25px auto;
     background: #fff;
-    justify-content: space-evenly;
-    height: 40px;
+    justify-content: space-between;
+    width: 80%;
+    height: 50px;
+}
+.carro-precio-final p{
+    margin-bottom: 0px;
+    margin: auto;
 }
 
 /*-------------------------REGALO-SECTION---------------------------*/
