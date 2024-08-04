@@ -20,8 +20,13 @@ a {
     color: #527167;
 }
 
+p{
+    margin-bottom: 0px;
+}
+
 h1, h2, h3, h4{
     color: #527167;
+    margin-bottom: 0px;
 }
 
 
@@ -304,6 +309,10 @@ body .navbar {
     gap: 20px;
 }
 
+.desaparece-fav{
+    display: none;
+}
+
 .fav-img {
     width: 100%;
     height: auto;
@@ -315,6 +324,7 @@ body .navbar {
     border: 1px solid #3f6153;
     background-color: #fff;
     text-align: center;
+    margin: 5px auto;
     padding: 5px 10px;
 }
 
@@ -344,7 +354,7 @@ body .navbar {
     font-weight: 500;
 }
 
-.fav-container {
+.oferta-container{
     height: 100%;
     display: grid;
     grid-template-rows: repeat(2, 1fr);
@@ -396,7 +406,9 @@ body .navbar {
     font-size: 22px;
     margin-bottom: 0px;
     margin: 5px auto;
-    padding: 9px 0px;
+    margin-right: 5px;
+    padding: 5px 10px;
+
 }
 
 .ofer-button {
@@ -410,11 +422,13 @@ body .navbar {
 /*-------------------------CARRITO-SECTION--------------------------------*/
 
 .carro-container{
-    width: 1000px;
+    max-width: 1000px;
+    min-width: 400px;
     height: auto;
     margin: auto;
     background-color: #eae0de;
     padding: 20px;
+    border-radius: 10px;
 }
 
 .titulo-carro-container{
@@ -504,6 +518,7 @@ body .navbar {
     justify-content: space-between;
     width: 80%;
     height: 50px;
+    border: 1px solid #000;
 }
 .carro-precio-final p{
     margin-bottom: 0px;
@@ -513,60 +528,52 @@ body .navbar {
 /*-------------------------REGALO-SECTION---------------------------*/
 
 .gift-card-container{
-    margin: 40px auto;
-    width: 1200px;
+    margin: 120px auto;
+    width: 1300px;
     height: 100%;
-
 }
-
-
 .gift-card-grid{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
     justify-content: center;
-    width: 100%;
     height: 100%;
-    gap: 30px;
+    width: 100%;
+    gap: 50px;
 }
 .regalo-card{
+    width: 650px;
+    height: 250px;
     border-radius: 10px;
     background-color: #eae0de;
-    width: 100%;
-}
+    margin: auto;
 
+}
 .gift-card-nombre{
     background-color: #fff;
     text-align: center;
-    margin: 30px auto;
-    padding: 20px;
+    margin: 35px auto;
+    padding: 13px;
     width: 29.375rem;
 }
-
 .gift-card-nombre h2{
     font-size: 20px;
     font-weight: 400;
 }
-
 .gift-card-text-container {
     background-color: #fff;
-    margin:  20px auto;
+    margin: auto;
     height: auto;
     width: 29.375rem;
 }
-
 .gift-card-text {
     text-align: center;
-    padding: 15px;
+    padding: 10px;
 }
-
 .gift-card-precio {
     display: flex;
     justify-content: space-evenly;
-}
-
-.gift-card-precio p{
-    padding: 15px;
+    padding: 10px;
 }
 /*--------------REGALO-SECTION-EDN----------------*/
 /*--------------------------------------CONTACTO-SECTIO------------------------------------------*/
@@ -726,8 +733,39 @@ a svg {
         font-weight: 200;
         font-size: 18px;
     }
+    /*FAVORITOS*/
+    .favoritos{
+        grid-template-columns: repeat(4, minmax(250px,auto));
+        margin: 30px;
+        gap: 15px;
+    }
+    .titulo-fav-producto {
+        font-weight: 200;
+        font-size: 18px;
+    }
+    /*OFERTA*/
+    .oferta-container{
+        grid-template-columns: repeat(4, minmax(250px,auto));
+        margin: 30px;
+        gap: 15px;
+    }
+    .titulo-oferta-producto a h2{
+        font-weight: 200;
+        font-size: 18px;
+    }
 }
-
+@media screen and (max-width: 1400px){
+    /*REGALOS*/
+    .gift-card-grid{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+    }
+    .regalo-card{
+        width: 550px;
+        height: 250px;
+    }
+}
 
 /*RESPONSIV-DESDE-LOS-1300PX*/
 @media screen and (max-width: 1299px){
@@ -744,6 +782,22 @@ a svg {
     /*TIENDA-SECUNDARIA*/
     .img-tienda-secundaria-container {
         height: 550px;
+    }
+    /*REGALO*/
+    .regalo-card{
+        width: 470px;
+        height: 230px;
+    }
+    .gift-card-container{
+        width: auto;
+    }
+    .gift-card-nombre{
+        margin: 35px auto;
+        padding: 13px;
+        width: 380px;
+    }
+    .gift-card-text-container {
+        width: 380px;
     }
 }
 
@@ -786,6 +840,28 @@ a svg {
     .nombre-tienda-container h3 {
         font-weight: 200;
         font-size: 18px;
+    }
+    /*FAVORITOS*/
+    .favoritos{
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(3, minmax(300px,auto));
+        margin: 18px;
+        gap: 13px;
+    }   
+    .desaparece-fav{
+        display: inline-block;
+    }
+    /*OFERTAS*/
+    .oferta-container{
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(3, minmax(300px,auto));
+        margin: 18px;
+        gap: 13px;
+    }
+    /*CARRO*/
+    .carro-container{
+        max-width: 800px;
+        min-width: 400px;
     }
 }
 
@@ -831,12 +907,17 @@ a svg {
     .tienda-secundaria{
         width: 100vw;
     }
-    /*TIENDA-SECTION*/
-    .tienda{
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-columns: repeat(3, minmax(300px,auto));
-        margin: 15px;
-        gap: 10px;
+    /*REGALO*/
+    .gift-card-container{
+        margin: 60px auto;
+    }
+    .gift-card-grid{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        gap: 50px;
     }
 }
 
@@ -845,12 +926,26 @@ a svg {
         display: none;
     }
         /*TIENDA-SECTION*/
-        .tienda{
-            grid-template-rows: repeat(4, 1fr);
-            grid-template-columns: repeat(2, minmax(250px,auto));
-            margin: 15px;
-            gap: 10px;
-        }
+    .tienda{
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(2, minmax(250px,auto));
+        margin: 15px;
+        gap: 10px;
+    }
+    /*FAVORITO*/
+    .favoritos{
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(2, minmax(250px,auto));
+        margin: 15px;
+        gap: 10px;
+    }
+    /*OFERTA*/
+    .oferta-container{
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(2, minmax(250px,auto));
+        margin: 15px;
+        gap: 10px;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -863,6 +958,19 @@ a svg {
     }
     .iconos-container{
         width: 500px;
+    }
+    /*CARRO*/
+    .carro-container{
+        max-width: 650px;
+    }
+    .producto-precio-container {
+        width: 170px;
+        height: 34px;
+    }
+    .producto-carro-nombre-container{
+        width: 250px;
+        height: 50px;
+        margin: 40px auto;
     }
 }
 
@@ -878,9 +986,42 @@ a svg {
         margin: 10px;
     }
 /*TIENDA-SECTION*/
-.nav-tienda ul li a{
-    letter-spacing: auto;
+    .nav-tienda ul li a{
+        letter-spacing: auto;
+    }
+/*CARRO*/
+    .producto-carro-container {
+        display: flex;
+        flex-direction: column;
+        margin: 35px 55px;
+    }
+    .img-carro-container {
+        width: 250px;
+        height: 350px;
+        margin: auto;
+    }
+    .img-carro {
+        width: 100%;
+        height: 100%;
+    }
+    .producto-carro-nombre-container{
+        width: 350px;
+        height: 50px;
+        margin: 15px auto;
+    }
+    .producto-carro-precio-container {
+        width: 250px;
+        margin: auto;
+    }   
+    
 }
+
+@media screen and (max-width: 700px) {
+    .carro-container{
+        max-width: 550px;
+        padding: 10px;
+        margin: 20px auto;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -925,9 +1066,32 @@ a svg {
     .tienda-secundaria{
         display: none;
     }
+    /*FAVORITO*/
+    .favoritos{
+        grid-template-columns: repeat(1, minmax(150px,auto));
+        margin: 15px;
+        gap: 25px;
+    }
+    /*FAVORITO*/
+    .oferta-container{
+        grid-template-columns: repeat(1, minmax(150px,auto));
+        margin: 15px;
+        gap: 25px;
+    }
     .footer-logo{
         margin-top: 0px;
         width: 300px;
+    }
+    /*CARRO*/
+    .carro-container{
+        max-width: 450px;
+        margin: auto;
+    }
+    .producto-carro-container{
+        margin: 25px 35px;
+    }
+    .titulo-carro-container{
+        width: 270px;
     }
 }
 @media screen and (max-width:550px){
@@ -941,9 +1105,83 @@ a svg {
         font-weight: 200;
         font-size: 22px;
         }
+    /*FAVORITOS*/
+    .titulo-fav {
+        width: 300px;
+        margin: 17px auto;
+        font-weight: 300;
+    }
+    /*OFERTA*/
+    .titulo-oferta{
+        width: 300px;
+        margin: 17px auto;
+        font-weight: 300;
+    }
+    /*CARRO*/
+    .carro-container{
+        max-width: 400px;
+        min-width: 200px;
+    }
+    .producto-carro-nombre-container{
+        width: 265px;
+        margin: 5px auto;
+    }  
+    /*REGALO*/
+    .gift-card-centrado{
+        height: 100%;
+    }
+    .regalo-card {
+        width: 430px;
+        height: auto;
+    }
+    .gift-card-nombre{
+        padding: 7px 0px;
+        margin: 15px auto;
+        width: 350px;
+    }
+    .gift-card-text-container{
+        margin: 10px auto;
+        width: 350px;
+    }
+    .gift-card-text{
+        padding: 5px auto;
+    }
+    .gift-card-precio{
+        padding: 5px auto;
+    }
 }
 
-@media screen and (max-width:380px){
+@media screen and (max-width: 470px){
+    .carro-container{
+        max-width: 300px;
+        min-width: 200px;
+    }
+    .producto-carro-container{
+        margin: 20px auto;
+        width: 250px;
+    }
+    .producto-carro-nombre-container{
+        width: 235px;
+        margin: 5px auto;
+        text-align: center;
+    }  
+    /*REGALO*/
+        /*REGALO*/
+        .regalo-card {
+            width: 350px;
+            height: auto;
+        }
+        .gift-card-nombre{
+            padding: 7px 0px;
+            margin: 15px auto;
+            width: 330px;
+        }
+        .gift-card-text-container{
+            width: 330px;
+        }
+}
+
+@media screen and (max-width:380px) {
     .fondo-pag-principal{
         height: 550px;
     }
