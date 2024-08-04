@@ -65,6 +65,7 @@ body .navbar {
     color: #fff;
     font-weight: 400;
     font-size: 60px;
+    padding: 20px;
 }
 
 .tienda-principal{
@@ -584,7 +585,7 @@ body .navbar {
     justify-content: center;
     align-items: center;
     background-color: #eae0de;
-    height: 75vh;
+    height: 700px;
     width: 800px;
     margin: 75px auto;
     gap: 25px;
@@ -598,12 +599,11 @@ body .navbar {
 
 .contacto-titulo{
     border-radius: 5px;
-    padding: 10px 14px;
-    margin: 20px auto;
+    padding: 7px 14px;
+    margin: auto;
     font-weight: 300;
     font-size: 25px;
-    width: 400px;
-    height: 90;
+    width: 350px;
     text-align: center;
 }
 
@@ -613,9 +613,9 @@ body .navbar {
 }
 
 .contacto label {
-    width: 300px;
     background: transparent;
     border: none;
+    margin-left: 10px;
 }
 
 .contacto input {
@@ -627,6 +627,8 @@ body .navbar {
 .contacto textarea {
     width: 500px;
     height: 150px;
+    border-radius: 5px;
+    padding: 10px;
 }
 
 .button-contacto {
@@ -972,6 +974,12 @@ a svg {
         height: 50px;
         margin: 40px auto;
     }
+    /*CONTACTO*/
+    .form{
+        height: 700px;
+        width: 700px;
+        margin: 60px auto;
+    }
 }
 
 @media screen and (max-width: 800px){
@@ -1013,7 +1021,10 @@ a svg {
         width: 250px;
         margin: auto;
     }   
-    
+    /*CONTACTO*/
+    .form{
+        width: 600px;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -1021,6 +1032,10 @@ a svg {
         max-width: 550px;
         padding: 10px;
         margin: 20px auto;
+    }
+    /*CONTACTO*/
+    .form{
+        width: 550px;
     }
 }
 
@@ -1093,6 +1108,17 @@ a svg {
     .titulo-carro-container{
         width: 270px;
     }
+    /*CONTACTO*/
+    .form{
+        width: 500px;
+    }
+    .contacto input {
+        width: 400px;
+    }
+    .contacto textarea {
+        width: 400px;
+        height: 150px;
+    }
 }
 @media screen and (max-width:550px){
 /*TIENDA-SECTION*/
@@ -1149,6 +1175,22 @@ a svg {
     .gift-card-precio{
         padding: 5px auto;
     }
+    /*CONTACTO*/
+    .form{
+        width: 400px;
+    }
+    .contacto-titulo{
+        padding: 5px 10px;
+        font-weight: 300;
+        font-size: 20px;
+        width: 270px;
+    }
+    .contacto input {
+        width: 350px;
+    }
+    .contacto textarea {
+        width: 350px;
+    }
 }
 
 @media screen and (max-width: 470px){
@@ -1166,23 +1208,37 @@ a svg {
         text-align: center;
     }  
     /*REGALO*/
-        /*REGALO*/
-        .regalo-card {
-            width: 350px;
-            height: auto;
-        }
-        .gift-card-nombre{
-            padding: 7px 0px;
-            margin: 15px auto;
-            width: 330px;
-        }
-        .gift-card-text-container{
-            width: 330px;
-        }
+    .regalo-card {
+        width: 350px;
+        height: auto;
+    }
+    .gift-card-nombre{
+        padding: 7px 0px;
+        margin: 15px auto;
+        width: 330px;
+    }
+    .gift-card-text-container{
+        width: 330px;
+    }
+    /*CONTACTO*/
+    .form{
+        width: 350px;
+        height: 650px;
+    }
+    .contacto input {
+        width: 290px;
+    }
+    .contacto textarea {
+        width: 280px;
+    }
 }
 
 @media screen and (max-width:380px) {
     .fondo-pag-principal{
         height: 550px;
+    }
+    /*CONTACTO*/
+    .form{
+        width: 310px;
     }
 }
