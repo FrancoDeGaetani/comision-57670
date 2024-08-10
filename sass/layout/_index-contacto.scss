@@ -1,0 +1,47 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #eae0de;
+    height: 700px;
+    width: 800px;
+    margin: 75px auto;
+    gap: 25px;
+    div{
+        h1{
+            border-radius: 5px;
+            padding: 7px 14px;
+            margin: auto;
+            font-weight: 300;
+            font-size: 25px;
+            width: 350px;
+            text-align: center;
+        }
+    }
+    .contacto{
+        display: flex;
+        flex-direction: column;
+        label{
+            background: transparent;
+            border: none;
+            margin-left: 10px;
+        }
+        input{
+            border-radius: 11.5px;
+            padding: 5px 20px;
+            width: 500px;
+        }
+        textarea{
+            width: 500px;
+            height: 150px;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        .button-contacto{
+            border-radius: 11.5px;
+            padding: 4px 14px;
+            width: 18.75rem;
+        }
+    }
+}

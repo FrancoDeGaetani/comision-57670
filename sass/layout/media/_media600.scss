@@ -1,0 +1,51 @@
+@media screen and (max-width:600px){
+    .favoritos{
+        grid-template-columns: repeat(1, minmax(150px,auto));
+        margin: 15px;
+        gap: 25px;
+    }
+    .oferta-container{
+        grid-template-columns: repeat(1, minmax(150px,auto));
+        margin: 15px;
+        gap: 25px;
+    }
+    .titulo-carro-container{
+        width: 370px;
+    }
+    .carro-container{
+        max-width: 450px;
+        margin: auto;
+        div{
+            flex-direction: column;
+            .img-carro-container{
+                width: 270px;
+                height: 350px;
+                margin: auto;
+            }
+            div{
+                margin: 15px;
+                .producto-carro-nombre-container{
+                    width: 300px;
+                    margin: auto;
+                }
+                div{
+                    gap: 0;
+                    width: 300px;
+                    margin: auto;
+                    .producto-precio-container{
+                        p{
+                            margin: auto;
+                            padding: 10px;
+                            width: 100px;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .carro-precio-final{
+        flex-direction: row !important;
+        margin: 40px auto 25px auto;
+    }
+}

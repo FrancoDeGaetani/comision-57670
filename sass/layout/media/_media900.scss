@@ -1,0 +1,32 @@
+@media screen and(max-width:900px){
+    .carro-container{
+        max-width: 650px;
+        div{
+            div{
+                .producto-carro-nombre-container{
+                    p{
+                        width: 250px;
+                        margin: auto;
+                    }
+                }
+                div{
+                    gap: 0px;
+                    .producto-button-container{
+                        margin: auto;
+                        button{
+                            border: none;
+                            background: transparent;
+                            color: #3f6153;
+                        }
+                    }
+                    .producto-precio-container{
+                        height: 50px;
+                        p{
+                            width: 110px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

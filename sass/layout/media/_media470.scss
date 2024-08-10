@@ -1,0 +1,55 @@
+@media screen and(max-width:470px){
+    .titulo-fav-container{
+        h1{
+            width: 300px;
+        }
+    }
+    .titulo-carro-container{
+        width: 250px;
+    }
+    .carro-container{
+        max-width: 300px;
+        min-width: 200px;
+        div{
+            div{
+                margin: 15px;
+                .producto-carro-nombre-container{
+                    width: 250px;
+                }
+                div{
+                    width: 200px;
+                }
+            }
+        }
+    }
+    .gift-card-container{
+        margin: 50px auto 0px auto;
+        width: 370px;
+        height: 100%;
+        div{
+            div{
+                width: 370px;
+                .gift-card-nombre{
+                    background-color: #fff;
+                    text-align: center;
+                    margin: 20px auto;
+                    width: auto;
+                    h2{
+                        width: 360px;
+                        font-size: 20px;
+                        font-weight: 400;
+                        padding: 10px;
+                    }
+                }
+                div{
+                    margin: auto;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    height: auto;
+                    width: 360px;
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+}

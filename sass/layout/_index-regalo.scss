@@ -1,0 +1,50 @@
+.gift-card-container{
+    margin: 100px auto;
+    width: 1300px;
+    height: 100%;
+    div{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        justify-content: center;
+        gap: 50px;
+        div{
+            border-radius: 10px;
+            background-color: #eae0de;
+            display: flex;
+            flex-direction: column;
+            gap: 1px;
+            .gift-card-nombre{
+                background-color: #fff;
+                text-align: center;
+                margin: 20px auto;
+                h2{
+                    font-size: 20px;
+                    font-weight: 400;
+                    padding: 10px;
+                }
+            }
+            div{
+                margin: auto;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                height: auto;
+                width: 500px;
+                background-color: #fff;
+                .gift-card-text{
+                    text-align: center;
+                    p{
+                        font-size: 20px;
+                        color: #3f6153;
+                    }
+                }
+                .gift-card-precio{
+                    flex-direction: row;
+                    p{
+                        color: #3f6153;
+                    }
+                }
+            }
+        }
+    }
+}

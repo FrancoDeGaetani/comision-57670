@@ -1,0 +1,50 @@
+@media screen and (max-width:1000px){
+    .tienda{
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(2, minmax(250px,auto));
+        margin: 15px;
+        gap: 10px;
+    }
+    footer{
+        .footer-container{
+            flex-wrap: wrap;
+            padding: 50px 0px;
+            div{
+            .iconos-container{
+                    width: 500px;
+                }
+            }
+        }
+    }
+    .favoritos{
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(2, minmax(250px,auto));
+        margin: 15px;
+        gap: 10px;
+    }
+    .titulo-oferta-container{
+        .titulo-oferta{
+            width: 450px;
+        }
+    }
+    .oferta-container{
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(2, minmax(250px,auto));
+        margin: 15px;
+        gap: 10px;
+    }
+    .gift-card-container{
+        margin: 50px auto 0px auto;
+        width: 450px;
+        height: 100%;
+        div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: auto;
+            width: auto;
+            gap: 50px;
+        }
+    }
+}
+

@@ -1,0 +1,60 @@
+@media screen and (max-width: 1200px){
+    .tienda {
+        .tienda-desaparece{
+            display: inline;
+        }
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(3, minmax(300px,auto));
+        margin: 18px;
+        gap: 13px;
+    }
+    .favoritos{
+        .desaparece-fav{
+            display: inline-block;
+        }
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(3, minmax(300px,auto));
+        margin: 18px;
+        gap: 13px;
+    }
+    .oferta-container{
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(3, minmax(300px,auto));
+        margin: 18px;
+        gap: 13px;
+        .desaparece-fav{
+            display: inline-block;
+        }
+        div{
+            div{
+                a{
+                    h2{
+                        font-weight: 200;
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+    } 
+    .carro-container{
+        max-width: 800px;
+        min-width: 400px;
+    }
+    .gift-card-container{
+        height: 100%;
+        width: 100%;
+        div{
+            grid-template-columns: repeat(2, auto);
+            grid-template-rows: repeat(2, auto);
+            div{
+                width: 450px;
+                .gift-card-nombre{
+                    width: 420px;
+                }
+                div{
+                    width: 420px;
+                }
+            }
+        }
+    }
+}

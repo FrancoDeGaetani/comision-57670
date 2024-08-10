@@ -1,0 +1,14 @@
+@media screen and (max-width:550px){
+    .tienda{
+        grid-template-columns: repeat(1, minmax(150px,auto));
+        margin: 15px;
+        gap: 25px;
+    }
+    .titulo-oferta-container{
+        .titulo-oferta{
+            width: 350px;
+            margin: 17px auto;
+            font-weight: 300;
+        }
+    }
+}

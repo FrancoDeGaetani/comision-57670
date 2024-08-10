@@ -1,0 +1,92 @@
+.titulo-carro-container{
+    margin: 40px auto ;
+    width: 31.25rem;
+    border: 1px solid #3f6153;
+    background-color: #fff;
+    text-align: center;
+    h1{
+        margin-bottom: 0px;
+    }
+}
+.carro-container{
+    max-width: 1000px;
+    min-width: 400px;
+    height: auto;
+    margin: auto;
+    background-color: #eae0de;
+    padding: 20px;
+    border-radius: 10px;
+    div{
+        display: flex;
+        justify-content: space-evenly;
+        .img-carro-container{
+            width: 210px;
+            height: 260px;
+            margin: 10px 0px 10px 0px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        div{
+            flex-direction: column;
+            justify-content: center;
+            .producto-carro-nombre-container{
+                display: flex;
+                border: 1px solid #3f6153;
+                color: #3f6153;
+                background-color: #fff;
+                p{
+                    width: 300px;
+                    margin: auto;
+                    padding: 10px;
+                    text-align: center;
+                }
+            }
+            div{
+                flex-direction: row;
+                gap: 20px;
+                .producto-button-container{
+                    margin: auto;
+                    button{
+                        border: none;
+                        background: transparent;
+                        color: #3f6153;
+                    }
+                }
+                .producto-precio-container{
+                    border: 1px solid #3f6153;
+                    color: #3f6153;
+                    background-color: #fff;
+                    margin: 10px;
+                    p{
+                        margin: auto;
+                        padding: 10px;
+                        width: 200px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+.precio-linea{
+    width: 85%;
+    margin: auto;
+    border: .5px solid #000;
+}
+.carro-precio-final{
+    display: flex;
+    margin: 40px auto 25px auto;
+    background: #fff;
+    justify-content: space-between;
+    width: 80%;
+    height: 50px;
+    border: 1px solid #3f6153;
+    .precio-final{
+        flex-direction: row;
+        margin-bottom: 0px;
+        margin: auto;
+        color: #3f6153;
+    }
+}

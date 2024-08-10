@@ -1,0 +1,90 @@
+footer{
+    background-color: #eae0de;
+    margin-top: 50px;
+    height: 100%;
+    width: 100%;
+    position: end;
+    .footer-container{
+        display: flex;
+        justify-content: space-evenly;
+        div{
+            .footer-logo-container{
+                a{
+                    .footer-logo{
+                        width: 275px;
+                        margin-top: 30px;
+                    }
+                }
+            }
+            div{
+                ul{
+                    li{
+                        a{
+                            color: #3f6153;
+                        }
+                    }
+                }
+            }
+        }
+        .mapa{
+            p{
+                margin: 20px auto;
+                text-align: center;
+            }
+        }
+        .iconos-container{
+            div{
+                background-color: #fff;
+                text-align: center;
+                margin:  20px auto;
+                display: flex;
+                a{
+                    margin: auto;
+                    svg{
+                        color: #3f6153;
+                        justify-content: center;
+                        margin: 5px;
+                    }
+                }
+            }
+            .ultimas-novedades{
+                background-color: #fff;
+                width: 370px;
+                height: 150px;
+                display: flex;
+                flex-direction: column;
+                p{
+                    color: #3f6153;
+                    margin: 10px;
+                    width: auto;
+                }
+                .email-container{
+                    background-color: transparent;
+                    margin: auto;
+                    .footer-email{
+                        input {
+                            font-weight: 400;
+                            background-color: #f9f7f7;
+                            border: 1px solid #3f6153;
+                            color: #3f6153;
+                            border-radius: 8px;
+                            width: 230px;
+                            padding-left: 10px;
+                        }
+                    }
+                    .footer-button{
+                        input {
+                            display: inline-block;
+                            margin: auto 20px;
+                            background-color: #f9f7f7;
+                            border: 1px solid #3f6153;
+                            color: #3f6153;
+                            border-radius: 8px;
+                            padding: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,34 @@
+/*UTILITIES*/
+
+/*BASE*/
+@import "./base/reset";
+@import "./base/typografias";
+
+/*LAYOUT*/
+@import "./layout/index-principal";
+@import "./layout/index-tienda";
+@import "./layout/index-favoritos";
+@import "./layout/index-oferta";
+@import "./layout/index-carro";
+@import "./layout/index-regalo";
+@import "./layout/index-contacto";
+@import "./layout/footer";
+
+/*COMPONENTS*/
+@import "./components/navbar";
+@import "./components/nav-tienda";
+
+/*QUERIS*/
+@import "./layout/media/media1670";
+@import "./layout/media/media1540";
+@import "./layout/media/media1400";
+@import "./layout/media/media1200";
+@import "./layout/media/media1100";
+@import "./layout/media/media1000";
+@import "./layout/media/media900";
+@import "./layout/media/media800";
+@import "./layout/media/media700";
+@import "./layout/media/media600";
+@import "./layout/media/media550";
+@import "./layout/media/media470";
+@import "./layout/media/media380";
