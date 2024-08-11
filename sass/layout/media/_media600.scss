@@ -1,4 +1,33 @@
 @media screen and (max-width:600px){
+    .tienda-principal{
+        .tienda-principal-container{
+            grid-template-columns: 420px;
+            gap: 20px;
+            div{
+                a{
+                    .img-tineda-principal-container{
+                        img{
+                            width: 420px;
+                            height: 650px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    .tienda-secundaria{
+        gap: 10px;
+        .desaparece-tienda-secun-2{
+            display: none;
+        }
+        div{
+            a{
+                .img-tienda-secundaria-container{
+                    height: 600px;
+                }
+            }
+        }
+    }
     .favoritos{
         grid-template-columns: repeat(1, minmax(150px,auto));
         margin: 15px;

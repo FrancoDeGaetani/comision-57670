@@ -10,6 +10,7 @@
     gap: 25px;
     div{
         h1{
+            @include titulo ;
             border-radius: 5px;
             padding: 7px 14px;
             margin: auto;
@@ -23,23 +24,27 @@
         display: flex;
         flex-direction: column;
         label{
+            @include titulo ;
             background: transparent;
             border: none;
             margin-left: 10px;
+            color: $titulo;
         }
         input{
-            border-radius: 11.5px;
+            @include titulo;
             padding: 5px 20px;
             width: 500px;
+            
         }
         textarea{
             width: 500px;
             height: 150px;
-            border-radius: 5px;
             padding: 10px;
+            color: $titulo;
+            @include titulo;
         }
         .button-contacto{
-            border-radius: 11.5px;
+            @include titulo ;
             padding: 4px 14px;
             width: 18.75rem;
         }

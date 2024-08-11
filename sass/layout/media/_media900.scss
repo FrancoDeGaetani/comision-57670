@@ -1,4 +1,43 @@
 @media screen and(max-width:900px){
+    .tienda-principal{
+        margin: 10px auto;
+        .desaparece{
+            display: inline;
+        }
+        .tienda-principal-container{
+            grid-template-columns: repeat(2, 350px);
+            grid-template-rows: repeat(3, auto);
+            gap: 20px;
+            div{
+                a{
+                    .img-tineda-principal-container{
+                        img{
+                            width: 350px;
+                            height: 500px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    section{
+        .lo-mas-vendido{
+            div{
+                .lmvd2{
+                    display: none;
+                }
+            }
+        }
+    }
+    .tienda-secundaria{
+        div{
+            a{
+                .img-tienda-secundaria-container{
+                    height: 500px;
+                }
+            }
+        }
+    }
     .carro-container{
         max-width: 650px;
         div{

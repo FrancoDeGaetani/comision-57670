@@ -35,13 +35,13 @@
                     text-align: center;
                     p{
                         font-size: 20px;
-                        color: #3f6153;
+                        color: $titulo;
                     }
                 }
                 .gift-card-precio{
                     flex-direction: row;
                     p{
-                        color: #3f6153;
+                        color: $titulo;
                     }
                 }
             }

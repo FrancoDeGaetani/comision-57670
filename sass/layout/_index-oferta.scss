@@ -1,7 +1,7 @@
 
 div{
     .titulo-oferta{
-        border: 1px solid #3f6153;
+        border: 1px solid $titulo;
         text-align: center;
         background-color: #fff;
         width: 500px;
@@ -26,7 +26,7 @@ div{
                 position: absolute;
                 display: flex;
                 background-color: #eae0de ;
-                color: #3f6153;
+                color: $titulo;
                 top: 17px;
                 right: -10px;
                 width: 100px;
@@ -50,7 +50,7 @@ div{
             a{
                 width: 100%;
                 h2{
-                    border: 1px solid #3f6153;
+                    border: 1px solid $titulo;
                     flex-grow: 1;
                     text-align: center;
                     font-weight: 300;

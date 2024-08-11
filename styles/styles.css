@@ -25,11 +25,23 @@ h1, h2, h3, h4 {
 
 @font-face {
   font-family: poppins;
-  src: url(../assets/fonts/Poppins-Regular.ttf); }
+  src: url("../assets/fonts/Poppins-Regular.ttf"); }
 
 @font-face {
   font-family: playwrite;
-  src: url(../assets/fonts/PlaywriteUSTrad-Regular.ttf); }
+  src: url("../assets/fonts/PlaywriteUSTrad-Regular.ttf"); }
+
+@font-face {
+  font-family: poppins-ligth;
+  src: url("../assets/fonts/Poppins-Light.ttf"); }
+
+@font-face {
+  font-family: poppins-extra-l;
+  src: url("../assets/fonts/Poppins-ExtraLight.ttf"); }
+
+@font-face {
+  font-family: poppins-thin;
+  src: url("../assets/fonts/Poppins-Thin.ttf"); }
 
 /*LAYOUT*/
 .tienda-main section .fondo-pag-principal {
@@ -41,9 +53,9 @@ h1, h2, h3, h4 {
   background-repeat: no-repeat;
   background-size: cover; }
   .tienda-main section .fondo-pag-principal h1 {
-    font-family: playwrite;
+    font-family: "playwrite";
     color: #fff;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 60px;
     padding: 20px; }
 
@@ -57,43 +69,46 @@ h1, h2, h3, h4 {
     grid-template-columns: repeat(4, minmax(350px, auto));
     column-gap: 50px;
     width: 100%; }
-    .tienda-principal .tienda-principal-container div a {
-      display: inline-block;
-      width: auto;
-      height: 100%; }
-      .tienda-principal .tienda-principal-container div a .img-tineda-principal-container {
-        height: 550px;
-        width: 100%;
-        display: inline-block; }
-        .tienda-principal .tienda-principal-container div a .img-tineda-principal-container img {
+    .tienda-principal .tienda-principal-container div {
+      width: 100%; }
+      .tienda-principal .tienda-principal-container div a {
+        display: inline-block;
+        width: auto;
+        height: 100%; }
+        .tienda-principal .tienda-principal-container div a .img-tineda-principal-container {
           width: 100%;
-          height: 100%; }
-        .tienda-principal .tienda-principal-container div a .img-tineda-principal-container h2 {
-          text-align: center;
-          padding: 5px auto;
-          width: 100%;
-          height: 40px;
-          margin: 5px auto;
-          border: 0.1px solid #527167;
-          border-radius: 5px;
-          font-weight: 400;
-          background-color: #fff; }
+          display: inline-block; }
+          .tienda-principal .tienda-principal-container div a .img-tineda-principal-container:hover {
+            transform: scale(1.05);
+            transition: transform 1.5s; }
+          .tienda-principal .tienda-principal-container div a .img-tineda-principal-container img {
+            width: 100%;
+            height: 550px; }
+          .tienda-principal .tienda-principal-container div a .img-tineda-principal-container .link-tienda {
+            text-align: center;
+            padding: 5px auto;
+            width: 100%;
+            height: 40px;
+            margin: 5px auto;
+            border: 0.1px solid #527167;
+            border-radius: 5px;
+            font-family: "poppins-ligth";
+            background-color: #fff; }
 
 .lo-mas-vendido {
   width: 100%;
   height: 230px; }
-  .lo-mas-vendido a {
+  .lo-mas-vendido a .mas-vendido-button {
     color: #527167;
     background-color: #fff;
     border: 0.1px solid #527167;
     border-radius: 5px;
     padding: 4px 14px;
-    font-weight: 400;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-family: "poppins-ligth";
+    font-size: 22px;
     width: 300px;
-    margin: 10px auto; }
+    margin: 20px auto;
+    text-align: center; }
   .lo-mas-vendido .lo-mas-vendido-img-container {
     display: flex;
     align-items: center;
@@ -123,18 +138,23 @@ h1, h2, h3, h4 {
       .tienda-secundaria div a .img-tienda-secundaria-container {
         width: 100%;
         height: 550px; }
+        .tienda-secundaria div a .img-tienda-secundaria-container:hover {
+          transform: scale(1.05);
+          transition: transform 1.5s; }
         .tienda-secundaria div a .img-tienda-secundaria-container img {
           width: 100%;
           height: 100%; }
         .tienda-secundaria div a .img-tienda-secundaria-container h3 {
+          color: #527167;
+          background-color: #fff;
+          border: 0.1px solid #527167;
+          border-radius: 5px;
           width: auto;
           margin: 10px auto;
           padding: 5px;
-          border: 0.1px solid #527167;
-          border-radius: 5px;
           font-weight: 300;
           font-size: 25px;
-          background-color: #fff;
+          font-family: "poppins-ligth";
           text-align: center; }
 
 .tienda-secundaria div .cartel-oferta-container {
@@ -419,6 +439,10 @@ div .titulo-oferta {
   margin: 75px auto;
   gap: 25px; }
   .form div h1 {
+    color: #527167;
+    background-color: #fff;
+    border: 0.1px solid #527167;
+    border-radius: 5px;
     border-radius: 5px;
     padding: 7px 14px;
     margin: auto;
@@ -430,20 +454,35 @@ div .titulo-oferta {
     display: flex;
     flex-direction: column; }
     .form .contacto label {
+      color: #527167;
+      background-color: #fff;
+      border: 0.1px solid #527167;
+      border-radius: 5px;
       background: transparent;
       border: none;
-      margin-left: 10px; }
+      margin-left: 10px;
+      color: #3f6153; }
     .form .contacto input {
-      border-radius: 11.5px;
+      color: #527167;
+      background-color: #fff;
+      border: 0.1px solid #527167;
+      border-radius: 5px;
       padding: 5px 20px;
       width: 500px; }
     .form .contacto textarea {
       width: 500px;
       height: 150px;
-      border-radius: 5px;
-      padding: 10px; }
+      padding: 10px;
+      color: #3f6153;
+      color: #527167;
+      background-color: #fff;
+      border: 0.1px solid #527167;
+      border-radius: 5px; }
     .form .contacto .button-contacto {
-      border-radius: 11.5px;
+      color: #527167;
+      background-color: #fff;
+      border: 0.1px solid #527167;
+      border-radius: 5px;
       padding: 4px 14px;
       width: 18.75rem; }
 
@@ -525,39 +564,15 @@ header .navbar {
 /*QUERIS*/
 @media screen and (max-width: 1670px) {
   .tienda-principal {
-    margin: 20px auto;
-    width: 1560px; }
-    .tienda-principal .desaparece {
-      display: none; }
+    margin: 10px auto; }
     .tienda-principal .tienda-principal-container {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(300px, auto));
-      grid-template-rows: 1fr;
-      column-gap: 50px;
-      width: 100%; }
-      .tienda-principal .tienda-principal-container div {
-        width: 100%; }
-        .tienda-principal .tienda-principal-container div a {
-          display: inline-block;
-          width: auto;
-          height: 100%; }
-          .tienda-principal .tienda-principal-container div a .img-tineda-principal-container {
-            height: 500px;
-            width: 100%;
-            display: inline-block; }
-            .tienda-principal .tienda-principal-container div a .img-tineda-principal-container img {
-              width: 100%;
-              height: 100%; }
-            .tienda-principal .tienda-principal-container div a .img-tineda-principal-container h2 {
-              text-align: center;
-              padding: 5px auto;
-              width: 100%;
-              height: 40px;
-              margin: 5px auto;
-              border: 0.1px solid #527167;
-              border-radius: 5px;
-              font-weight: 400;
-              background-color: #fff; }
+      grid-template-columns: repeat(4, 340px);
+      grid-template-rows: auto;
+      justify-content: center;
+      column-gap: 30px; }
+      .tienda-principal .tienda-principal-container div a .img-tineda-principal-container img {
+        width: 340px;
+        height: 550px; }
   .producto-tienda-container a div div h3 {
     font-weight: 200;
     font-size: 20px; } }
@@ -567,6 +582,21 @@ header .navbar {
     grid-template-columns: repeat(4, minmax(250px, auto));
     margin: 30px;
     gap: 20px; }
+  .tienda-principal {
+    margin: 10px auto;
+    width: 100%; }
+    .tienda-principal .tienda-principal-container {
+      grid-template-columns: repeat(4, 320px);
+      grid-template-rows: auto;
+      column-gap: 15px; }
+      .tienda-principal .tienda-principal-container div a .img-tineda-principal-container img {
+        width: 100%;
+        height: 500px; }
+      .tienda-principal .tienda-principal-container div a .img-tineda-principal-container .link-tienda {
+        margin: 5px auto;
+        font-family: "poppins-extra-l";
+        font-size: 30px;
+        text-align: center; }
   .producto-tienda-container a div div h3 {
     font-weight: 200;
     font-size: 18px; }
@@ -574,7 +604,7 @@ header .navbar {
     grid-template-columns: repeat(4, minmax(250px, auto));
     margin: 30px;
     gap: 20px; }
-  div a h2 {
+  div a .titulo-fav-producto {
     font-weight: 200;
     font-size: 18px; }
   .oferta-container {
@@ -584,6 +614,21 @@ header .navbar {
     .oferta-container div div a h2 {
       font-weight: 200;
       font-size: 20px; } }
+
+@media screen and (max-width: 1360px) {
+  .tienda-main section .fondo-pag-principal {
+    height: 800px; }
+  .tienda-principal {
+    margin: 10px auto; }
+    .tienda-principal .desaparece {
+      display: inline; }
+    .tienda-principal .tienda-principal-container {
+      grid-template-columns: repeat(3, 320px);
+      grid-template-rows: repeat(2, auto);
+      gap: 10px; }
+      .tienda-principal .tienda-principal-container div a .img-tineda-principal-container img {
+        width: 320px;
+        height: 450px; } }
 
 @media screen and (max-width: 1400px) {
   .gift-card-container {
@@ -603,6 +648,25 @@ header .navbar {
     gap: 13px; }
     .tienda .tienda-desaparece {
       display: inline; }
+  section .lo-mas-vendido div .lmvd1 {
+    display: none; }
+  .tienda-secundaria {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    width: auto;
+    margin: auto; }
+    .tienda-secundaria .desaparece-tienda-secun {
+      display: none; }
+    .tienda-secundaria div {
+      width: auto;
+      height: auto; }
+      .tienda-secundaria div a {
+        display: inline-block;
+        width: auto; }
+        .tienda-secundaria div a .img-tienda-secundaria-container {
+          width: 100%;
+          height: 550px; }
   .favoritos {
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(3, minmax(300px, auto));
@@ -638,15 +702,16 @@ header .navbar {
 
 @media screen and (max-width: 1100px) {
   .tienda-principal {
-    margin: 15px; }
-    .tienda-principal div {
-      display: flex;
-      gap: 15px; }
-      .tienda-principal div div a .img-tineda-principal-container {
-        height: 500px; }
-  .tienda-secundaria div a .img-tienda-secundaria-container {
-    width: 100%;
-    height: 400px; } }
+    margin: 10px auto; }
+    .tienda-principal .desaparece {
+      display: inline; }
+    .tienda-principal .tienda-principal-container {
+      grid-template-columns: repeat(3, 290px);
+      grid-template-rows: repeat(2, auto);
+      gap: 10px; }
+      .tienda-principal .tienda-principal-container div a .img-tineda-principal-container img {
+        width: 290px;
+        height: 450px; } }
 
 @media screen and (max-width: 1000px) {
   .tienda {
@@ -684,6 +749,21 @@ header .navbar {
       gap: 50px; } }
 
 @media screen and (max-width: 900px) {
+  .tienda-principal {
+    margin: 10px auto; }
+    .tienda-principal .desaparece {
+      display: inline; }
+    .tienda-principal .tienda-principal-container {
+      grid-template-columns: repeat(2, 350px);
+      grid-template-rows: repeat(3, auto);
+      gap: 20px; }
+      .tienda-principal .tienda-principal-container div a .img-tineda-principal-container img {
+        width: 350px;
+        height: 500px; }
+  section .lo-mas-vendido div .lmvd2 {
+    display: none; }
+  .tienda-secundaria div a .img-tienda-secundaria-container {
+    height: 500px; }
   .carro-container {
     max-width: 650px; }
     .carro-container div div .producto-carro-nombre-container p {
@@ -702,7 +782,49 @@ header .navbar {
         .carro-container div div div .producto-precio-container p {
           width: 110px; } }
 
+@media screen and (max-width: 800px) {
+  .tienda-main section .fondo-pag-principal {
+    background-image: url(../../assets/imgs/fondo-celu.jpg);
+    height: 90vh;
+    background-position: center; }
+    .tienda-main section .fondo-pag-principal h1 {
+      display: none; }
+  .tienda-principal .tienda-principal-container {
+    grid-template-columns: repeat(2, 320px);
+    grid-template-rows: repeat(3, auto);
+    gap: 20px; }
+    .tienda-principal .tienda-principal-container div a .img-tineda-principal-container img {
+      width: 320px;
+      height: 450px; }
+  .lo-mas-vendido {
+    height: auto; }
+    .lo-mas-vendido .lo-mas-vendido-img-container {
+      display: none; }
+  .carrucel {
+    display: inline; }
+    .carrucel div {
+      margin: 20px auto; }
+  .tienda-secundaria div a .img-tienda-secundaria-container {
+    height: 450px; } }
+
 @media screen and (max-width: 700px) {
+  .tienda-main section .fondo-pag-principal {
+    background-image: url(../../assets/imgs/fondo-celu.jpg);
+    height: 85vh;
+    background-position: center; }
+    .tienda-main section .fondo-pag-principal h1 {
+      display: none; }
+  .tienda-principal .tienda-principal-container {
+    grid-template-columns: repeat(2, 290px);
+    grid-template-rows: repeat(3, auto);
+    gap: 20px; }
+    .tienda-principal .tienda-principal-container div a .img-tineda-principal-container img {
+      width: 290px;
+      height: 450px; }
+  .tienda-secundaria {
+    gap: 10px; }
+    .tienda-secundaria div a .img-tienda-secundaria-container {
+      height: 400px; }
   .titulo-fav-container h1 {
     width: 400px; }
   .carro-container {
@@ -711,6 +833,18 @@ header .navbar {
     margin: 20px auto; } }
 
 @media screen and (max-width: 600px) {
+  .tienda-principal .tienda-principal-container {
+    grid-template-columns: 420px;
+    gap: 20px; }
+    .tienda-principal .tienda-principal-container div a .img-tineda-principal-container img {
+      width: 420px;
+      height: 650px; }
+  .tienda-secundaria {
+    gap: 10px; }
+    .tienda-secundaria .desaparece-tienda-secun-2 {
+      display: none; }
+    .tienda-secundaria div a .img-tienda-secundaria-container {
+      height: 600px; }
   .favoritos {
     grid-template-columns: repeat(1, minmax(150px, auto));
     margin: 15px;

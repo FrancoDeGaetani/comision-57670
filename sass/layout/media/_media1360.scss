@@ -1,18 +1,25 @@
-@media screen and (max-width: 1100px){
+@media screen and (max-width:1360px){
+    .tienda-main{
+        section{
+            .fondo-pag-principal{
+                height: 800px;
+            }
+        }
+    }
     .tienda-principal{
         margin: 10px auto;
         .desaparece{
             display: inline;
         }
         .tienda-principal-container{
-            grid-template-columns: repeat(3, 290px);
+            grid-template-columns: repeat(3, 320px);
             grid-template-rows: repeat(2, auto);
             gap: 10px;
             div{
                 a{
                     .img-tineda-principal-container{
                         img{
-                            width: 290px;
+                            width: 320px;
                             height: 450px;
                         }
                     }

@@ -1,40 +1,17 @@
 @media screen and (max-width:1670px){
     .tienda-principal{
-        margin: 20px auto;
-        width: 1560px;
-        .desaparece{
-            display: none;
-        }
+        margin: 10px auto;
         .tienda-principal-container{
-            display: grid;
-            grid-template-columns: repeat(4, minmax(300px,auto));
-            grid-template-rows: 1fr;
-            column-gap: 50px;
-            width: 100%;
+            grid-template-columns: repeat(4, 340px);
+            grid-template-rows: auto;
+            justify-content: center;
+            column-gap: 30px;
             div{
-                width: 100%;;
                 a{
-                    display: inline-block;
-                    width: auto;
-                    height: 100%;
                     .img-tineda-principal-container{
-                        height: 500px;
-                        width: 100%;
-                        display: inline-block;
                         img{
-                            width: 100%;
-                            height: 100%;
-                        }
-                        h2{
-                            text-align: center;
-                            padding: 5px auto;
-                            width: 100%; 
-                            height: 40px;
-                            margin: 5px auto;
-                            border: 0.1px solid #527167;
-                            border-radius: 5px;
-                            font-weight: 400;
-                            background-color: #fff;
+                            width: 340px;
+                            height: 550px;
                         }
                     }
                 }

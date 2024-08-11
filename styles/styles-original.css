@@ -1087,7 +1087,7 @@ a svg {
         margin: 15px;
         gap: 25px;
     }
-    /*FAVORITO*/
+    /*OFERTA*/
     .oferta-container{
         grid-template-columns: repeat(1, minmax(150px,auto));
         margin: 15px;

@@ -1,4 +1,6 @@
 /*UTILITIES*/
+@import "./utilities/mixins";
+@import "./utilities/funciones";
 
 /*BASE*/
 @import "./base/reset";
@@ -21,6 +23,7 @@
 /*QUERIS*/
 @import "./layout/media/media1670";
 @import "./layout/media/media1540";
+@import "./layout/media/media1360";
 @import "./layout/media/media1400";
 @import "./layout/media/media1200";
 @import "./layout/media/media1100";

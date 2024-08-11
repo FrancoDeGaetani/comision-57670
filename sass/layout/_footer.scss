@@ -20,7 +20,7 @@ footer{
                 ul{
                     li{
                         a{
-                            color: #3f6153;
+                            color: $titulo;
                         }
                     }
                 }
@@ -41,7 +41,7 @@ footer{
                 a{
                     margin: auto;
                     svg{
-                        color: #3f6153;
+                        color: $titulo;
                         justify-content: center;
                         margin: 5px;
                     }
@@ -54,7 +54,7 @@ footer{
                 display: flex;
                 flex-direction: column;
                 p{
-                    color: #3f6153;
+                    color: $titulo;
                     margin: 10px;
                     width: auto;
                 }
@@ -65,8 +65,8 @@ footer{
                         input {
                             font-weight: 400;
                             background-color: #f9f7f7;
-                            border: 1px solid #3f6153;
-                            color: #3f6153;
+                            border: 1px solid $titulo;
+                            color: $titulo;
                             border-radius: 8px;
                             width: 230px;
                             padding-left: 10px;
@@ -77,8 +77,8 @@ footer{
                             display: inline-block;
                             margin: auto 20px;
                             background-color: #f9f7f7;
-                            border: 1px solid #3f6153;
-                            color: #3f6153;
+                            border: 1px solid $titulo;
+                            color: $titulo;
                             border-radius: 8px;
                             padding: 5px;
                         }
