@@ -1,11 +1,29 @@
 
 .tienda {
+    a{
+        grid-column: span 2;
+        margin: auto;
+        display: inline-block;
+        width: 100%;
+        height: 90%;
+        .oferta-tienda{
+            background-color: #EAE0DE;
+            display: flex;
+            margin: auto;
+            width: 100%;
+            height: 100%;
+            img{
+                width: 90%;
+                margin: auto;
+            }
+        }
+    }
     .tienda-desaparece{
         display: none;
     }
     height: 100%;
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 1fr auto 1fr;
     grid-template-columns: repeat(4, minmax(350px,auto));
     margin: 30px;
     gap: 20px;

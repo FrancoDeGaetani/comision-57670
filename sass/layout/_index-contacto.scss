@@ -8,6 +8,7 @@
     width: 800px;
     margin: 75px auto;
     gap: 25px;
+    border-radius: 10px;
     div{
         h1{
             @include titulo ;
