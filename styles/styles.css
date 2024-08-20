@@ -810,7 +810,7 @@ header .navbar {
 
 @media screen and (max-width: 800px) {
   .tienda-main section .fondo-pag-principal {
-    background-image: url(../../assets/imgs/fondo-celu.jpg);
+    background-image: url(../assets/imgs/fondo-celu.jpg);
     height: 90vh;
     background-position: center; }
     .tienda-main section .fondo-pag-principal h1 {
@@ -835,7 +835,6 @@ header .navbar {
 
 @media screen and (max-width: 700px) {
   .tienda-main section .fondo-pag-principal {
-    background-image: url(../../assets/imgs/fondo-celu.jpg);
     height: 85vh;
     background-position: center; }
     .tienda-main section .fondo-pag-principal h1 {
