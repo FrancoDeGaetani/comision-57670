@@ -1,4 +1,16 @@
 @media screen and (max-width:600px){
+    .tienda-main{
+        section{
+            .fondo-pag-principal{
+                .fondo-medio{
+                    display: none;
+                }
+                .fondo-chico{
+                    display: block;
+                }
+            }
+        }
+    }
     .tienda-principal{
         .tienda-principal-container{
             grid-template-columns: 420px;

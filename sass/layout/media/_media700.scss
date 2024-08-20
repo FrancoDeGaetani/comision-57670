@@ -1,15 +1,4 @@
 @media screen and(max-width:700px){
-    .tienda-main{
-        section{
-            .fondo-pag-principal{
-                height: 85vh;
-                background-position: center;
-                h1{
-                    display: none;
-                }
-            }
-        }
-    }
     .tienda-principal{
         .tienda-principal-container{
             grid-template-columns: repeat(2, 290px);

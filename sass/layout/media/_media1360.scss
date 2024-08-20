@@ -2,7 +2,12 @@
     .tienda-main{
         section{
             .fondo-pag-principal{
-                height: 800px;
+                .fondo-principal{
+                    display: none;
+                }
+                .fondo-medio{
+                    display: block;
+                }
             }
         }
     }
