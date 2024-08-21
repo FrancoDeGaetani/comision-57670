@@ -46,9 +46,12 @@
         gap: 25px;
     }
     .oferta-container{
-        grid-template-columns: repeat(1, minmax(150px,auto));
+        grid-template-columns: repeat(1, minmax(150px,840px));
         margin: 15px;
         gap: 25px;
+    }
+    .link-tienda-oferta{
+        display: none;
     }
     .titulo-carro-container{
         width: 370px;

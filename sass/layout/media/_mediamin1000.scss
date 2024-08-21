@@ -1,0 +1,22 @@
+@media screen and (min-width:1000px){
+    header{
+        .navbar{
+            .container-fluid{
+                padding: 15px 5px;
+                animation: nav-movement both;
+                animation-timeline: scroll();
+                animation-range: 40px 140px;
+            }
+        }
+    }
+}
+
+@keyframes nav-movement{
+    from{
+        padding: 15px 5px;
+    }
+    to{
+        padding: 0px 5px;
+        
+    }
+}

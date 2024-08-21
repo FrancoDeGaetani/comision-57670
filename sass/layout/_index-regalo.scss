@@ -2,6 +2,7 @@
     margin: 100px auto;
     width: 1300px;
     height: 100%;
+    margin-top: 190px;
     div{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -45,6 +46,23 @@
                     }
                 }
             }
+        }
+    }
+}
+section{
+    .cliente-texto{
+        width: 90%;
+        background-color: #fff;
+        border: 1px solid #eae0de;
+        margin: 50px auto;
+        h1{
+            text-align: center;
+            margin: 30px;
+        }
+        p{
+            text-align: center;
+            border: none;
+            margin: 15px auto;
         }
     }
 }

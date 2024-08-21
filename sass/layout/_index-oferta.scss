@@ -6,6 +6,7 @@ div{
         background-color: #fff;
         width: 500px;
         margin: 25px auto;
+        margin-top: 120px;
         font-weight: 500;
     }
 }
@@ -19,16 +20,17 @@ div{
     .desaparece-fav{
         display: none;
     }
-    .tienda-oferta{
+    .link-tienda-oferta{
         grid-row: span 2;
-        display: flex;
-        a{
-            display: inline-block;
-            height: 90%;
-            margin: auto;
+        .tienda-oferta{
+            background-color: #EAE0DE;
+            display: flex;
+            width: 100%;
+            height: 100%;
             img{
                 width: 100%;
-                height: 100%;
+                height: 90%;
+                margin: auto;
             }
         }
     }
