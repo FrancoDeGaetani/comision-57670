@@ -1,0 +1,27 @@
+@media screen and (max-width:380px){
+    .form{
+        height: 600px;
+        width: 95%;
+        div{
+            h1{
+            font-size: 18px;
+            width: 100%;
+            }
+        }
+    }
+    .contacto{
+        .contacto-label, .contacto-input{
+            padding: 5px 20px;
+            width: 100% !important;
+        }
+        textarea{
+            width: 250px !important;
+            height: auto;
+            padding: 10px;
+        }
+        .button-contacto{
+            padding: 4px 14px;
+            width: 200px !important;
+        }
+    }
+}

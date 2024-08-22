@@ -1,4 +1,11 @@
 @media screen and (max-width:1000px){
+    section{
+        .fondo-pag-principal{
+            .fondo-medio{
+                margin-top: 0 !important;
+            }
+        }
+    }
     .tienda{
         grid-template-rows: repeat(4, 1fr);
         grid-template-columns: repeat(2, minmax(250px,auto));
@@ -21,6 +28,9 @@
         grid-template-columns: repeat(2, minmax(250px,auto));
         margin: 15px;
         gap: 10px;
+        .desaparece-fav-2{
+            display: inline-block;
+        }
     }
     .titulo-oferta-container{
         .titulo-oferta{

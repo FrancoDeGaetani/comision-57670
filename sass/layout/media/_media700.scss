@@ -36,4 +36,20 @@
         padding: 10px;
         margin: 20px auto;
     }
+    .contacto{
+        width: auto;
+        .contacto-label, .contacto-input{
+            padding: 5px 20px;
+            width: 400px !important;
+        }
+        textarea{
+            width: 400px !important;
+            height: auto;
+            padding: 10px;
+        }
+        .button-contacto{
+            padding: 4px 14px;
+            width: 90%;
+        }
+    }
 }

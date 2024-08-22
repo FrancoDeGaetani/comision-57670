@@ -244,7 +244,7 @@ h1, h2, h3, h4 {
   grid-template-columns: repeat(4, minmax(350px, auto));
   margin: 30px;
   gap: 20px; }
-  .favoritos .desaparece-fav {
+  .favoritos .desaparece-fav, .favoritos .desaparece-fav-2 {
     display: none; }
   .favoritos div div {
     position: relative;
@@ -765,6 +765,8 @@ header .navbar {
         height: 450px; } }
 
 @media screen and (max-width: 1000px) {
+  section .fondo-pag-principal .fondo-medio {
+    margin-top: 0 !important; }
   .tienda {
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: repeat(2, minmax(250px, auto));
@@ -780,6 +782,8 @@ header .navbar {
     grid-template-columns: repeat(2, minmax(250px, auto));
     margin: 15px;
     gap: 10px; }
+    .favoritos .desaparece-fav-2 {
+      display: inline-block; }
   .titulo-oferta-container .titulo-oferta {
     width: 450px; }
   .oferta-container {
@@ -844,7 +848,10 @@ header .navbar {
       .carro-container div div div .producto-precio-container {
         height: 50px; }
         .carro-container div div div .producto-precio-container p {
-          width: 110px; } }
+          width: 110px; }
+  .form {
+    height: 700px;
+    width: 80%; } }
 
 @media screen and (max-width: 800px) {
   .tienda-principal .tienda-principal-container {
@@ -882,13 +889,26 @@ header .navbar {
   .carro-container {
     max-width: 550px;
     padding: 10px;
-    margin: 20px auto; } }
+    margin: 20px auto; }
+  .contacto {
+    width: auto; }
+    .contacto .contacto-label, .contacto .contacto-input {
+      padding: 5px 20px;
+      width: 400px !important; }
+    .contacto textarea {
+      width: 400px !important;
+      height: auto;
+      padding: 10px; }
+    .contacto .button-contacto {
+      padding: 4px 14px;
+      width: 90%; } }
 
 @media screen and (max-width: 600px) {
   .tienda-main section .fondo-pag-principal .fondo-medio {
     display: none; }
   .tienda-main section .fondo-pag-principal .fondo-chico {
-    display: block; }
+    display: block;
+    margin-top: 0 !important; }
   .tienda-principal .tienda-principal-container {
     grid-template-columns: 420px;
     gap: 20px; }
@@ -957,9 +977,40 @@ header .navbar {
   .titulo-oferta-container .titulo-oferta {
     width: 350px;
     margin: 17px auto;
-    font-weight: 300; } }
+    font-weight: 300; }
+  .form {
+    height: 600px;
+    width: 95%; }
+    .form div h1 {
+      font-size: 18px;
+      width: 270px; }
+  .contacto .contacto-label, .contacto .contacto-input {
+    padding: 5px 20px;
+    width: 300px !important; }
+  .contacto textarea {
+    width: 300px !important;
+    height: auto;
+    padding: 10px; }
+  .contacto .button-contacto {
+    padding: 4px 14px;
+    width: 90%; } }
 
 @media screen and (max-width: 470px) {
+  .tienda-principal {
+    margin: auto; }
+    .tienda-principal .tienda-principal-container {
+      grid-template-columns: auto;
+      gap: 20px;
+      margin: auto;
+      margin-top: 15px;
+      width: auto; }
+      .tienda-principal .tienda-principal-container div a .img-tineda-principal-container img {
+        width: 100%;
+        height: auto; }
+  .tienda-secundaria div .cartel-oferta-container div .img-tienda-secundaria {
+    height: auto; }
+  .tienda-secundaria div .cartel-oferta-container span {
+    right: 0px; }
   .titulo-fav-container h1 {
     width: 300px; }
   .titulo-carro-container {
@@ -995,4 +1046,49 @@ header .navbar {
         margin-bottom: 20px;
         height: auto;
         width: 360px;
-        background-color: #fff; } }
+        background-color: #fff; }
+  .iconos-container div {
+    text-align: center;
+    margin: auto;
+    display: flex;
+    width: 90%; }
+    .iconos-container div a {
+      margin: auto; }
+      .iconos-container div a svg {
+        color: #3f6153;
+        justify-content: center;
+        margin: 5px; }
+  .iconos-container .ultimas-novedades {
+    width: 90% !important;
+    height: auto !important;
+    display: flex;
+    flex-direction: column; }
+    .iconos-container .ultimas-novedades p {
+      margin: auto;
+      width: auto; }
+    .iconos-container .ultimas-novedades .email-container {
+      background-color: transparent;
+      margin: auto; }
+      .iconos-container .ultimas-novedades .email-container .footer-button input {
+        display: inline-block;
+        margin: 0 !important;
+        border-radius: 8px;
+        padding: 5px; } }
+
+@media screen and (max-width: 380px) {
+  .form {
+    height: 600px;
+    width: 95%; }
+    .form div h1 {
+      font-size: 18px;
+      width: 100%; }
+  .contacto .contacto-label, .contacto .contacto-input {
+    padding: 5px 20px;
+    width: 100% !important; }
+  .contacto textarea {
+    width: 250px !important;
+    height: auto;
+    padding: 10px; }
+  .contacto .button-contacto {
+    padding: 4px 14px;
+    width: 200px !important; } }

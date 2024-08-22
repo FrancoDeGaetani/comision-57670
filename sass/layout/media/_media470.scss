@@ -1,4 +1,38 @@
 @media screen and(max-width:470px){
+    .tienda-principal{
+        margin: auto;
+        .tienda-principal-container{
+            grid-template-columns: auto;
+            gap: 20px;
+            margin: auto;
+            margin-top: 15px;
+            width: auto;
+            div{
+                a{
+                    .img-tineda-principal-container{
+                        img{
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .tienda-secundaria{
+        div{
+            .cartel-oferta-container{
+                div{
+                    .img-tienda-secundaria{
+                        height: auto;
+                    }
+                }
+                span{
+                    right: 0px;
+                }
+            }
+        }
+    }
     .titulo-fav-container{
         h1{
             width: 300px;
@@ -48,6 +82,44 @@
                     height: auto;
                     width: 360px;
                     background-color: #fff;
+                }
+            }
+        }
+    }
+    .iconos-container{
+        div{
+            text-align: center;
+            margin: auto;
+            display: flex;
+            width: 90%;
+            a{
+                margin: auto;
+                svg{
+                    color: $titulo;
+                    justify-content: center;
+                    margin: 5px;
+                }
+            }
+        }
+        .ultimas-novedades{
+            width: 90% !important;
+            height: auto !important;
+            display: flex;
+            flex-direction: column;
+            p{
+                margin: auto;
+                width: auto;
+            }
+            .email-container{
+                background-color: transparent;
+                margin: auto;
+                .footer-button{
+                    input {
+                        display: inline-block;
+                        margin: 0 !important;
+                        border-radius: 8px;
+                        padding: 5px;
+                    }
                 }
             }
         }

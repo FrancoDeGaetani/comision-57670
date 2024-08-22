@@ -23,4 +23,29 @@
             font-weight: 300;
         }
     }
+    .form{
+        height: 600px;
+        width: 95%;
+        div{
+            h1{
+            font-size: 18px;
+            width: 270px;
+            }
+        }
+    }
+    .contacto{
+        .contacto-label, .contacto-input{
+            padding: 5px 20px;
+            width: 300px !important;
+        }
+        textarea{
+            width: 300px !important;
+            height: auto;
+            padding: 10px;
+        }
+        .button-contacto{
+            padding: 4px 14px;
+            width: 90%;
+        }
+    }
 }
