@@ -181,20 +181,21 @@ h1, h2, h3, h4 {
   grid-template-columns: repeat(4, minmax(350px, auto));
   margin: 30px;
   gap: 20px; }
-  .tienda a {
+  .tienda .link-oferta-tienda {
     grid-column: span 2;
     margin: auto;
     display: inline-block;
     width: 100%;
-    height: 90%; }
-    .tienda a .oferta-tienda {
+    height: 100%; }
+    .tienda .link-oferta-tienda .oferta-tienda {
       background-color: #EAE0DE;
       display: flex;
       margin: auto;
       width: 100%;
       height: 100%; }
-      .tienda a .oferta-tienda img {
+      .tienda .link-oferta-tienda .oferta-tienda img {
         width: 90%;
+        height: auto;
         margin: auto; }
   .tienda .tienda-desaparece {
     display: none; }
@@ -203,30 +204,29 @@ h1, h2, h3, h4 {
   height: 100%;
   width: auto; }
   .producto-tienda-container a {
-    display: inline-block;
-    height: 100%; }
+    display: inline-block; }
     .producto-tienda-container a div div {
       height: 100%;
       width: 100%; }
       .producto-tienda-container a div div img {
         height: 100%;
         width: 100%; }
-    .producto-tienda-container a div div {
-      display: flex;
-      gap: 10px; }
-      .producto-tienda-container a div div h3 {
-        border: 1px solid #3f6153;
-        flex-grow: 1;
-        text-align: center;
-        font-weight: 300;
-        font-size: 22px;
-        margin-bottom: 0px;
-        margin: 5px auto;
-        padding: 9px 0px; }
-      .producto-tienda-container a div div button {
-        border: none;
-        background: transparent;
-        color: #3f6153; }
+  .producto-tienda-container div {
+    display: flex;
+    gap: 10px; }
+    .producto-tienda-container div h3 {
+      border: 1px solid #3f6153;
+      flex-grow: 1;
+      text-align: center;
+      font-weight: 300;
+      font-size: 22px;
+      margin-bottom: 0px;
+      margin: 5px auto;
+      padding: 9px 0px; }
+    .producto-tienda-container div button {
+      border: none;
+      background: transparent;
+      color: #3f6153; }
 
 .titulo-fav-container h1 {
   border: 1px solid #3f6153;
@@ -622,7 +622,7 @@ header .navbar {
       .tienda-principal .tienda-principal-container div a .img-tineda-principal-container img {
         width: 340px;
         height: 550px; }
-  .producto-tienda-container a div div h3 {
+  .producto-tienda-container div h3 {
     font-weight: 200;
     font-size: 20px; } }
 
@@ -921,6 +921,18 @@ header .navbar {
       display: none; }
     .tienda-secundaria div a .img-tienda-secundaria-container {
       height: 600px; }
+  .tienda {
+    grid-template-columns: repeat(1, minmax(150px, auto));
+    margin: 15px;
+    gap: 25px; }
+    .tienda .link-oferta-tienda {
+      grid-column: span 1;
+      height: 250px; }
+      .tienda .link-oferta-tienda .oferta-tienda {
+        width: auto; }
+        .tienda .link-oferta-tienda .oferta-tienda img {
+          width: 100%;
+          height: auto; }
   .favoritos {
     grid-template-columns: repeat(1, minmax(150px, auto));
     margin: 15px;
@@ -961,19 +973,6 @@ header .navbar {
     margin: 40px auto 25px auto; } }
 
 @media screen and (max-width: 550px) {
-  .tienda {
-    grid-template-columns: repeat(1, minmax(150px, auto));
-    margin: 15px;
-    gap: 25px; }
-    .tienda a {
-      grid-column: span 1;
-      height: 270px; }
-      .tienda a .oferta-tienda {
-        width: 100%;
-        height: 250; }
-        .tienda a .oferta-tienda img {
-          width: 95%;
-          height: 95%; }
   .titulo-oferta-container .titulo-oferta {
     width: 350px;
     margin: 17px auto;

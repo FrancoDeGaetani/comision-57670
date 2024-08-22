@@ -41,6 +41,22 @@
             }
         }
     }
+    .tienda{
+        grid-template-columns: repeat(1, minmax(150px,auto));
+        margin: 15px;
+        gap: 25px;
+        .link-oferta-tienda{
+            grid-column: span 1;
+            height: 250px;
+            .oferta-tienda{
+                width: auto;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
     .favoritos{
         grid-template-columns: repeat(1, minmax(150px,auto));
         margin: 15px;
