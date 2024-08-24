@@ -57,7 +57,7 @@
         }
     }
     .gift-card-container{
-        margin: 50px auto 0px auto;
+        margin: 150px auto 0px auto;
         width: 370px;
         height: 100%;
         div{
@@ -120,6 +120,18 @@
                         border-radius: 8px;
                         padding: 5px;
                     }
+                }
+            }
+        }
+    }
+    .producto{
+        section{
+            div{
+                height: auto;
+                width: auto;
+                img{
+                    height: 500px;
+                    width: auto;
                 }
             }
         }

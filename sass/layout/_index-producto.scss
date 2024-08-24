@@ -1,0 +1,95 @@
+.producto-container{
+    height: auto;
+    width: 70%;
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 60px;
+    div{
+        display: flex;
+        margin: auto;
+        gap: 50px;
+        .fila-producto-2{
+            width: 481px;
+            height: auto;
+            section{
+                gap: 10px;
+                .texto-container{
+                    margin-bottom: 35px;
+                    p{
+                        background-color: #eae0de;
+                        padding: 20px;
+                        color: $titulo;
+                    }
+                }
+                .producto-titulo-container{
+                    display: flex;
+                    justify-content: space-between;
+                    margin: auto;
+                    .producto-like{
+                        border: none;
+                        color: $titulo;
+                        background-color: #f9f7f7;
+                    }
+                    .producto-titulo{
+                        flex-direction: column;
+                        padding: 0;
+                        margin: 0;
+                        gap: 15px;
+                        h1{
+                            width: auto;
+                        }
+                        p{
+                            font-size: 25px;
+                            color: $titulo;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+.producto-caracteristicas{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    background-color: #eae0de;
+    color: $titulo;
+    .producto-color{
+        color: $titulo;
+    }
+    .producto-guia{
+        gap: 70px;
+        color: $titulo;
+    }
+    .producto-talle{
+        gap: 30px;
+        button{
+            width: 40px;
+            padding: 5px;
+            color: $titulo;
+            background-color: #fff;
+            border: 1PX solid $titulo;;
+            border-radius: 3px;
+        }
+    }
+    .agregar-carrito-producto{
+        button{
+            padding: 10px;
+            color: $titulo;
+            border: 1PX solid $titulo;;
+        }
+    }
+}
+
+.producto{
+    section{
+        div{
+            height: 600px;
+            img{
+                height: 100%;
+                width: auto;
+            }
+        }
+    }
+}

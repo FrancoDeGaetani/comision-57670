@@ -265,7 +265,7 @@ h1, h2, h3, h4 {
     .favoritos div a .titulo-fav-producto {
       width: 100%;
       font-weight: 200;
-      font-size: 25px;
+      font-size: 20px;
       border: 1px solid #3f6153;
       background-color: #fff;
       text-align: center;
@@ -591,6 +591,77 @@ footer {
           border-radius: 8px;
           padding: 5px; }
 
+.producto-container {
+  height: auto;
+  width: 70%;
+  margin: auto;
+  margin-top: 150px;
+  margin-bottom: 60px; }
+  .producto-container div {
+    display: flex;
+    margin: auto;
+    gap: 50px; }
+    .producto-container div .fila-producto-2 {
+      width: 481px;
+      height: auto; }
+      .producto-container div .fila-producto-2 section {
+        gap: 10px; }
+        .producto-container div .fila-producto-2 section .texto-container {
+          margin-bottom: 35px; }
+          .producto-container div .fila-producto-2 section .texto-container p {
+            background-color: #eae0de;
+            padding: 20px;
+            color: #3f6153; }
+        .producto-container div .fila-producto-2 section .producto-titulo-container {
+          display: flex;
+          justify-content: space-between;
+          margin: auto; }
+          .producto-container div .fila-producto-2 section .producto-titulo-container .producto-like {
+            border: none;
+            color: #3f6153;
+            background-color: #f9f7f7; }
+          .producto-container div .fila-producto-2 section .producto-titulo-container .producto-titulo {
+            flex-direction: column;
+            padding: 0;
+            margin: 0;
+            gap: 15px; }
+            .producto-container div .fila-producto-2 section .producto-titulo-container .producto-titulo h1 {
+              width: auto; }
+            .producto-container div .fila-producto-2 section .producto-titulo-container .producto-titulo p {
+              font-size: 25px;
+              color: #3f6153; }
+
+.producto-caracteristicas {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  background-color: #eae0de;
+  color: #3f6153; }
+  .producto-caracteristicas .producto-color {
+    color: #3f6153; }
+  .producto-caracteristicas .producto-guia {
+    gap: 70px;
+    color: #3f6153; }
+  .producto-caracteristicas .producto-talle {
+    gap: 30px; }
+    .producto-caracteristicas .producto-talle button {
+      width: 40px;
+      padding: 5px;
+      color: #3f6153;
+      background-color: #fff;
+      border: 1PX solid #3f6153;
+      border-radius: 3px; }
+  .producto-caracteristicas .agregar-carrito-producto button {
+    padding: 10px;
+    color: #3f6153;
+    border: 1PX solid #3f6153; }
+
+.producto section div {
+  height: 600px; }
+  .producto section div img {
+    height: 100%;
+    width: auto; }
+
 /*COMPONENTS*/
 header .navbar {
   padding: 0px;
@@ -679,7 +750,11 @@ header .navbar {
       gap: 10px; }
       .tienda-principal .tienda-principal-container div a .img-tineda-principal-container img {
         width: 320px;
-        height: 450px; } }
+        height: 450px; }
+  .producto-container {
+    width: 95%; }
+    .producto-container div {
+      gap: 30px; } }
 
 @media screen and (max-width: 1400px) {
   .gift-card-container {
@@ -792,7 +867,7 @@ header .navbar {
     margin: 15px;
     gap: 10px; }
   .gift-card-container {
-    margin: 50px auto 0px auto;
+    margin: 150px auto 0px auto;
     width: 450px;
     height: 100%; }
     .gift-card-container div {
@@ -870,7 +945,27 @@ header .navbar {
     .carrucel div {
       margin: 20px auto; }
   .tienda-secundaria div a .img-tienda-secundaria-container {
-    height: 450px; } }
+    height: 450px; }
+  .producto-container div {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 30px; }
+  .producto-caracteristicas {
+    display: flex;
+    flex-direction: column; }
+    .producto-caracteristicas .producto-guia {
+      flex-direction: row; }
+    .producto-caracteristicas .producto-talle {
+      flex-direction: row; }
+  .producto section div {
+    height: auto;
+    width: auto; }
+    .producto section div img {
+      height: 600px;
+      width: auto; }
+  .fila-producto-2 {
+    width: 100% !important; } }
 
 @media screen and (max-width: 700px) {
   .tienda-principal .tienda-principal-container {
@@ -1024,7 +1119,7 @@ header .navbar {
       .carro-container div div div {
         width: 200px; }
   .gift-card-container {
-    margin: 50px auto 0px auto;
+    margin: 150px auto 0px auto;
     width: 370px;
     height: 100%; }
     .gift-card-container div div {
@@ -1072,7 +1167,13 @@ header .navbar {
         display: inline-block;
         margin: 0 !important;
         border-radius: 8px;
-        padding: 5px; } }
+        padding: 5px; }
+  .producto section div {
+    height: auto;
+    width: auto; }
+    .producto section div img {
+      height: 500px;
+      width: auto; } }
 
 @media screen and (max-width: 380px) {
   .form {
@@ -1090,4 +1191,10 @@ header .navbar {
     padding: 10px; }
   .contacto .button-contacto {
     padding: 4px 14px;
-    width: 200px !important; } }
+    width: 200px !important; }
+  .producto section div {
+    height: auto;
+    width: auto; }
+    .producto section div img {
+      height: 420px;
+      width: auto; } }

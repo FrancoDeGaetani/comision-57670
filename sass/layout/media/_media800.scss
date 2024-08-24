@@ -36,5 +36,37 @@
                 }
             }
         }
+    }.producto-container{
+        div{
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            gap: 30px;
+        }
+    }
+    .producto-caracteristicas{
+        display: flex;
+        flex-direction: column;
+        .producto-guia{
+            flex-direction: row;
+        }
+        .producto-talle{
+            flex-direction: row;
+        }
+    }
+    .producto{
+        section{
+            div{
+                height: auto;
+                width: auto;
+                img{
+                    height: 600px;
+                    width: auto;
+                }
+            }
+        }
+    }
+    .fila-producto-2{
+        width: 100% !important;
     }
 }
